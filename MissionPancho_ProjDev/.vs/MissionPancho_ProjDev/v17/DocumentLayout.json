@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\",
+  "WorkspaceRootPath": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|d:\\documents\\programming files\\visual studio\\project development\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|solutionrelative:missionpancho_projdev\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|d:\\documents\\programming files\\visual studio\\project development\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|solutionrelative:missionpancho_projdev\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|d:\\documents\\programming files\\visual studio\\project development\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|c:\\users\\wataru\\source\\repos\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|solutionrelative:missionpancho_projdev\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|d:\\documents\\programming files\\visual studio\\project development\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|c:\\users\\wataru\\source\\repos\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|solutionrelative:missionpancho_projdev\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|c:\\users\\wataru\\source\\repos\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|solutionrelative:missionpancho_projdev\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|c:\\users\\wataru\\source\\repos\\mobile-development.github\\missionpancho_projdev\\missionpancho_projdev\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBABFCB8-3C4E-4EE2-A482-4B7061DB3C67}|MissionPancho_ProjDev\\MissionPancho_ProjDev.csproj|solutionrelative:missionpancho_projdev\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,15 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "homePage.xaml",
-              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\homePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\homePage.xaml",
               "RelativeDocumentMoniker": "MissionPancho_ProjDev\\homePage.xaml",
-              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\homePage.xaml",
+              "ToolTip": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\homePage.xaml",
               "RelativeToolTip": "MissionPancho_ProjDev\\homePage.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -43,37 +75,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml.cs",
               "RelativeDocumentMoniker": "MissionPancho_ProjDev\\App.xaml.cs",
-              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml.cs",
               "RelativeToolTip": "MissionPancho_ProjDev\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T12:19:37.132Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\MainPage.xaml",
               "RelativeDocumentMoniker": "MissionPancho_ProjDev\\MainPage.xaml",
-              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\MainPage.xaml",
               "RelativeToolTip": "MissionPancho_ProjDev\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-31T12:11:56.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml",
               "RelativeDocumentMoniker": "MissionPancho_ProjDev\\App.xaml",
-              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\PROJECT DEVELOPMENT\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml",
+              "ToolTip": "C:\\Users\\Wataru\\source\\repos\\mobile-development.github\\MissionPancho_ProjDev\\MissionPancho_ProjDev\\App.xaml",
               "RelativeToolTip": "MissionPancho_ProjDev\\App.xaml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
