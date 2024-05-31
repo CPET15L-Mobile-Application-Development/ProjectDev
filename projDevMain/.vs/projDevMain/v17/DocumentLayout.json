@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|d:\\documents\\programming files\\visual studio\\projectdev\\projdevmain\\projdevmain\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|solutionrelative:projdevmain\\homepage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|d:\\documents\\programming files\\visual studio\\projectdev\\projdevmain\\projdevmain\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|solutionrelative:projdevmain\\registerpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|d:\\documents\\programming files\\visual studio\\projectdev\\projdevmain\\projdevmain\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|solutionrelative:projdevmain\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|d:\\documents\\programming files\\visual studio\\projectdev\\projdevmain\\projdevmain\\registerpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|solutionrelative:projdevmain\\registerpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|d:\\documents\\programming files\\visual studio\\projectdev\\projdevmain\\projdevmain\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|solutionrelative:projdevmain\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|d:\\documents\\programming files\\visual studio\\projectdev\\projdevmain\\projdevmain\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|solutionrelative:projdevmain\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|d:\\documents\\programming files\\visual studio\\projectdev\\projdevmain\\projdevmain\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{D4EB9325-799E-4395-9EEA-1203F4267A29}|projDevMain\\projDevMain.csproj|solutionrelative:projdevmain\\loginpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "homePage.xaml",
+              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\homePage.xaml",
+              "RelativeDocumentMoniker": "projDevMain\\homePage.xaml",
+              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\homePage.xaml",
+              "RelativeToolTip": "projDevMain\\homePage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-31T15:41:57.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "loginPage.xaml.cs",
+              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\loginPage.xaml.cs",
+              "RelativeDocumentMoniker": "projDevMain\\loginPage.xaml.cs",
+              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\loginPage.xaml.cs",
+              "RelativeToolTip": "projDevMain\\loginPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T15:21:46.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "registerPage.xaml",
+              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\registerPage.xaml",
+              "RelativeDocumentMoniker": "projDevMain\\registerPage.xaml",
+              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\registerPage.xaml",
+              "RelativeToolTip": "projDevMain\\registerPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-31T15:17:37.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "registerPage.xaml.cs",
+              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\registerPage.xaml.cs",
+              "RelativeDocumentMoniker": "projDevMain\\registerPage.xaml.cs",
+              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\registerPage.xaml.cs",
+              "RelativeToolTip": "projDevMain\\registerPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T15:19:48.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\App.xaml.cs",
+              "RelativeDocumentMoniker": "projDevMain\\App.xaml.cs",
+              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\App.xaml.cs",
+              "RelativeToolTip": "projDevMain\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T14:42:26.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "loginPage.xaml",
+              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\loginPage.xaml",
+              "RelativeDocumentMoniker": "projDevMain\\loginPage.xaml",
+              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\loginPage.xaml",
+              "RelativeToolTip": "projDevMain\\loginPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-31T14:42:47.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\MainPage.xaml",
+              "RelativeDocumentMoniker": "projDevMain\\MainPage.xaml",
+              "ToolTip": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\MainPage.xaml",
+              "RelativeToolTip": "projDevMain\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-31T14:24:42.639Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

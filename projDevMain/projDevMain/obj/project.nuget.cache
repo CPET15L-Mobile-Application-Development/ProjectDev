@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Oyjyl5iFZQi16kkMswDkX8/2i8KM6mxsxKC0c0hX2pSh09Ux8IFdE2iv5WQI0FTVEfGFmjNQOdyQy1Eartad3A==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JOIBOI\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\JOIBOI\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\JOIBOI\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\JOIBOI\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\JOIBOI\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
