@@ -10,10 +10,9 @@ namespace projDevMain
         {
             InitializeComponent();
 
-            //MainPage = new MainPage();
+            MainPage = new registerPage();
             //MainPage = new loginPage();
-
-            MainPage = new NavigationPage(new loginPage());
+            //MainPage = new NavigationPage(new loginPage());
         }
 
         protected override void OnStart()

@@ -7,15 +7,31 @@
         
         <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <!--REGISTER PART-->
-            <Label Text="REGISTER" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,25"/>
-            <StackLayout HorizontalOptions="CenterAndExpand" Padding="20">
-                <Label Text="Username:" TextColor="White"/>
-                <Entry WidthRequest="300" BackgroundColor="#212930"></Entry>
+            <Label Text="Register" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
+            <StackLayout Spacing="15" HorizontalOptions="CenterAndExpand">
+                <Entry Placeholder="Username" PlaceholderColor="#adb8bd" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
+                <Entry Placeholder="Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
+                <Entry Placeholder="Confirm Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
+                
+                <!--TERMS AND CONDITION MODAL-->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                    <CheckBox Color="#adb8bd" VerticalOptions="Center"/>
+                    <Label TextColor="#fcfcfc" VerticalOptions="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="I read and agree to "/>
+                                <Span Text="Terms and conditions" FontAttributes="Bold" TextDecorations="Underline"/>
+                            </FormattedString>
+                        </Label.FormattedText>
 
-                <Label Text="Password:" TextColor="White"/>
-                <Entry IsPassword="True" BackgroundColor="#212930"></Entry>
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="termsCondition_modal_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
             </StackLayout>
-            <Button Text="Sign Up" FontSize="15" CornerRadius="5" Margin="0,20,0,20"/>
+            <Button TextColor="#fcfcfc" BackgroundColor="#5d737e" CornerRadius="5" Text="Sign Up" FontSize="15" Margin="0,20,0,20" Clicked="signUp_Clicked"/>
 
             <!--LOGIN PART-->
             <Label HorizontalOptions="Center">

@@ -13,6 +13,7 @@ namespace projDevMain
         public MainPage()
         {
             InitializeComponent();
+
         }
     }
 }

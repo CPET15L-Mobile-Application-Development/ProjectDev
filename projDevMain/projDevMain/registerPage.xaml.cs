@@ -16,13 +16,27 @@ namespace projDevMain
 		{
 			InitializeComponent ();
 
-            //NAVIGATION PAGE PROPERTIES
-            NavigationPage.SetHasNavigationBar(this, false);
+
         }
 
+        //SIGN-UP BUTTON
+        private void signUp_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        //LOGIN LINK
         private void LoginPage_Tapped(object sender, EventArgs e)
         {
-			Navigation.PushAsync(new loginPage());
+
         }
+
+        //TERMS AND CONDITION FUNCTION
+        private void termsCondition_modal_Tapped(object sender, EventArgs e)
+        {
+            
+        }
+
+
     }
 }
