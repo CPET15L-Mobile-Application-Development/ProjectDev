@@ -3408,24 +3408,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JOIBOI\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Wataru\\.nuget\\packages\\": {},
+    "D:\\Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
       "projectName": "projDevMain.Android",
-      "projectPath": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
-      "packagesPath": "C:\\Users\\JOIBOI\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain.Android\\obj\\",
+      "projectPath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
+      "packagesPath": "C:\\Users\\Wataru\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\JOIBOI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Wataru\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3439,8 +3439,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {
-              "projectPath": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj"
+            "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {
+              "projectPath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj"
             }
           }
         }

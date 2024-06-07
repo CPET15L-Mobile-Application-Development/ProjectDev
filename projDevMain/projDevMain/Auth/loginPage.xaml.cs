@@ -10,19 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace projDevMain
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class registerPage : ContentPage
+	public partial class loginPage : ContentPage
 	{
-		public registerPage ()
+		public loginPage ()
 		{
 			InitializeComponent ();
 
-            //NAVIGATION PAGE PROPERTIES
+			//NAVIGATION PAGE PROPERTIES
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void LoginPage_Tapped(object sender, EventArgs e)
+        private void RegisterPage_Tapped(object sender, EventArgs e)
         {
-			Navigation.PushAsync(new loginPage());
+            // Replace the current page with the loginPage
+            Navigation.InsertPageBefore(new registerPage(), this);
+            Navigation.PopAsync();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using projDevMain.Views;
+using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,10 +12,11 @@ namespace projDevMain
         {
             InitializeComponent();
 
-            //MainPage = new MainPage();
-            //MainPage = new loginPage();
+            // Set the SplashScreen as the initial page
+            MainPage = new SplashPage();
+            
 
-            MainPage = new NavigationPage(new loginPage());
+
         }
 
         protected override void OnStart()
