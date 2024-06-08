@@ -2,10 +2,135 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projDevMain.aboutPage"
-             Title="About Page">
+             BackgroundColor="#212930">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="THIS IS THE ABOUT PAGE!" FontSize="Large" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
-        </StackLayout>
+        <ScrollView HorizontalScrollBarVisibility="Always">
+            <StackLayout Margin="20,0,20,15">
+                <Label Text="About Page" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center" Margin="0,25,0,0"/>
+                <Image Source="logoMain.png" Margin="0,10,0,0"/>
+
+                <!--ABOUT THE APPLICATION-->
+                <Label Text="About the Application" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center"/>
+                <Frame BackgroundColor="#30292f">
+                    <StackLayout>
+                        <Label Text="Charon is your one-stop shop for all your gaming needs! We're passionate about creating a user-friendly and comprehensive game library platform that caters to gamers of all levels."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+
+                <!--ABOUT THE DEVELOPER-->
+                <Label Text="About the Developer" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center" Margin="0,15,0,0"/>
+                <Frame BackgroundColor="#30292f">
+                    <StackLayout>
+                        <Label Text="Joey Boy Mission" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="I am a 3rd-year undergraduate student at the Technological University of the Philippines, pursuing a Bachelor of Engineering Technology Major in Computer Engineering Technology. I developed this application as part of the requirements of the course Mobile Application Programming and Design under the guidance of Prof. Ramel Dumosdos."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="Driven by a passion for technology, particularly network engineering, computer engineering, and entrepreneurship, I am an aspiring full-stack developer. The dream, of course, is to head a large tech company, but for now, the objective remains to accumulate experience and skills."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="To my family - Emily and Prince, my loved one - Chin."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Michael Angilo Pancho" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium" Margin="0,15,0,0"/>
+                        <Label Text="I am a 21-year-old third-year college student at the Technological University of the Philippines - Manila. I am passionate about technology and aspire to become a software engineer, network engineer, or entrepreneur. Currently, I am developing an innovative app for my Mobile Programming subject, guided by Mr. Ramel Dumosdos. This project allows me to apply and expand my skills in mobile app development, bringing me closer to my career goals."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="I am committed to continuously learning and improving my technical skills. Through dedication and hard work, I aim to make a meaningful impact in the world of technology. My journey is fueled by the desire to acquire the expertise necessary for success in my chosen field, and I am excited about the future opportunities that lie ahead."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <!--SPECIAL THANKS TO-->
+                <Label Text="Special thanks to!" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center" Margin="0,15,0,0"/>
+                <Frame BackgroundColor="#30292f">
+                    <StackLayout>
+                        <Label Text="Professor Ramel Dumosdos" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="We would like to express my sincere gratitude to Professor Ramel Dumosdos for his invaluable guidance and support throughout the development of this application. His expertise and motivation were instrumental in helping me bring this project to life."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="Family and Friends" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="We would also like to extend my heartfelt thanks to my family and friends for their unwavering support during this journey. Their encouragement and belief in me kept me motivated and helped me overcome challenges."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+
+                <!--TERMS AND CONDITION-->
+                <Label Text="Terms and Condition" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center" Margin="0,15,0,0"/>
+
+                <Frame BackgroundColor="#30292f">
+                    <StackLayout>
+                        <Label Text="User Accounts and Conduct" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="You may be required to create an account to access certain features of the App. You are responsible for maintaining the confidentiality of your account information and password and for restricting access to your device. You agree to accept responsibility for all activities that occur under your account or password."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="You agree to use the App in a lawful and respectful manner. You will not use the App to:"
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        
+                        <Label Text="- Upload or share any content that is illegal, harmful, threatening, abusive, harassing, defamatory, obscene, hateful, or racially or ethnically offensive."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="- Infringe on the intellectual property rights of others."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="- Disrupt or interfere with the security of the App."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="- Use the App for any unauthorized commercial purposes."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+
+                        <Label Text="Content and Availability" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="- Charon strives to provide accurate information about games, including their prices. However, we cannot guarantee the accuracy or completeness of such information."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="- Game availability and pricing can change rapidly. Charon does not guarantee that any particular game will be available at any given time or at a specific price."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="- Charon reserves the right to modify or discontinue, temporarily or permanently, any part of the App with or without notice."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="User Generated Content" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="The App may allow users to submit reviews, comments, or other content (collectively, User Generated Content). You retain all ownership rights to your User Generated Content. However, by submitting User Generated Content, you grant Charon a non-exclusive, royalty-free, worldwide license to use, reproduce, modify, publish, distribute, and translate your User Generated Content in connection with the App."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="You are solely responsible for the content of your User Generated Content and any harm resulting from it. Charon takes no responsibility for and does not endorse any User Generated Content."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Disclaimers" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="The App is provided as is and without warranties of any kind, express or implied. Charon disclaims all warranties, including but not limited to, the warranties of merchantability, fitness for a particular purpose, and non-infringement."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+                        <Label Text="Charon does not warrant that the App will be uninterrupted or error-free, that defects will be corrected, or that the App is free of viruses or other harmful components."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Limitation of Liability" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="Charon shall not be liable for any damages arising out of or related to your use of the App, including but not limited to, direct, indirect, incidental, consequential, punitive, or special damages."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Intellectual Property" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="The App and all content and materials included in the App (including text, graphics, logos, images, audio clips, video clips, and software) are the property of Charon or its licensors and are protected by copyright, trademark, and other intellectual property laws."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Termination" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="Charon may terminate your access to the App for any reason, at any time, without notice."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Governing Law and Dispute Resolution" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="These Terms shall be governed by and construed in accordance with the laws of Philippines.
+Any dispute arising out of or relating to these Terms will be settled by Regional Trial Court or Supreme Court."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Changes to the Terms" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="Charon may revise these Terms at any time by updating this page. You are bound by any revisions and should therefore periodically visit this page to review the current Terms."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                        <Label Text="Contact Us" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Medium"/>
+                        <Label Text="If you have any questions about these Terms, please contact us at charon_official@main.com."
+                         FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
+
+                    </StackLayout>
+                </Frame>
+                
+                <!--LOGOS INVOLVED-->
+                <StackLayout Orientation="Horizontal" Spacing="15" Margin="0,15,0,0"  HeightRequest="70" HorizontalOptions="CenterAndExpand">
+                    <Image Source="logoMain.png" />
+                    <Image Source="tupLOGO.png"/>
+                    <Image Source="citLOGO.png"/>
+                </StackLayout>
+                
+                
+            </StackLayout>
+        </ScrollView>
+        
     </ContentPage.Content>
 </ContentPage>

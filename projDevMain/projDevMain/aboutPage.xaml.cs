@@ -15,6 +15,8 @@ namespace projDevMain
         public aboutPage()
         {
             InitializeComponent();
+
         }
+
     }
 }
