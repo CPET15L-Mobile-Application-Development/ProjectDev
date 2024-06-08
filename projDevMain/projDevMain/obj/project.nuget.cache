@@ -1,15 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "QdIUdtCZuowY6mta91KKdLCOtaIpQMA9aW1PzqL4phxkmDrXlPpW/heLUAFyYDMJ37zzHaBw6iPRhYpmtDu8Ww==",
+  "dgSpecHash": "kWLj3zbvaH8=",
   "success": true,
-  "projectFilePath": "D:\\Documents\\PROGRAMMING FILES\\Visual Studio\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
+  "projectFilePath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\JOIBOI\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\JOIBOI\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\JOIBOI\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\JOIBOI\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
-    "C:\\Users\\JOIBOI\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\JOIBOI\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\Wataru\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Wataru\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Wataru\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Wataru\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Wataru\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }

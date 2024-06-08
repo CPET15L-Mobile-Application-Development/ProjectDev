@@ -55,9 +55,6 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
-      <Version>3.0.0.5</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
@@ -87,9 +84,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\user.png" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\projDevMain\projDevMain.csproj">
       <Project>{0765A783-E104-4FA4-9CFC-0496DE99A6B6}</Project>
@@ -97,65 +92,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\about.png" />
-    <AndroidResource Include="Resources\drawable\home.png" />
-    <AndroidResource Include="Resources\drawable\list.png" />
-    <AndroidResource Include="Resources\drawable\profile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\aboutIcon.png" />
-    <AndroidResource Include="Resources\drawable\accountIcon.png" />
-    <AndroidResource Include="Resources\drawable\addItem.png" />
-    <AndroidResource Include="Resources\drawable\homeIcon.png" />
-    <AndroidResource Include="Resources\drawable\listIcon.png" />
-    <AndroidResource Include="Resources\drawable\logoMain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\topBrand.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\addSymbol.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cartIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\gameCOD.png" />
-    <AndroidResource Include="Resources\drawable\gameER.png" />
-    <AndroidResource Include="Resources\drawable\gameFN.png" />
-    <AndroidResource Include="Resources\drawable\gameGTA.png" />
-    <AndroidResource Include="Resources\drawable\gameLOL.png" />
-    <AndroidResource Include="Resources\drawable\gameMC.png" />
-    <AndroidResource Include="Resources\drawable\gameRDR.png" />
-    <AndroidResource Include="Resources\drawable\gameTW.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\citLOGO.png" />
-    <AndroidResource Include="Resources\drawable\tupLOGO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\deleteIcon.png" />
-    <AndroidResource Include="Resources\drawable\editIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\gameAL.png" />
-    <AndroidResource Include="Resources\drawable\gameGOW.png" />
-    <AndroidResource Include="Resources\drawable\gameHD.png" />
-    <AndroidResource Include="Resources\drawable\gameS4.png" />
-    <AndroidResource Include="Resources\drawable\gameSDV.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\JBimages.png" />
-    <AndroidResource Include="Resources\drawable\JBprofile.png" />
-    <AndroidResource Include="Resources\drawable\JBwallpaper.png" />
-    <AndroidResource Include="Resources\drawable\verifiedIcon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\socFB.png" />
-    <AndroidResource Include="Resources\drawable\socGit.png" />
-    <AndroidResource Include="Resources\drawable\socInsta.png" />
-    <AndroidResource Include="Resources\drawable\socLink.png" />
-    <AndroidResource Include="Resources\drawable\socX.png" />
+    <AndroidResource Include="Resources\drawable\charonlogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

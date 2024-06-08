@@ -16,19 +16,15 @@ namespace projDevMain
 		{
 			InitializeComponent ();
 
+			//NAVIGATION PAGE PROPERTIES
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        //SIGN-IN BUTTON
-        private void signIn_Clicked(object sender, EventArgs e)
+        private void RegisterPage_Tapped(object sender, EventArgs e)
         {
-
+            // Replace the current page with the loginPage
+            Navigation.InsertPageBefore(new registerPage(), this);
+            Navigation.PopAsync();
         }
-
-        //REGISTER LINK
-        private void registerPage_Tapped(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
