@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:projDevMain"
+             x:Class="projDevMain.MainPage"
+                
+             NavigationPage.TitleIconImageSource="topBrand.png"
+             BarBackgroundColor="#02111b"
+             SelectedTabColor="#5d737e"
+             UnselectedTabColor="#fcfcfc"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom">
+    
+    <!--INCLUDE ALL PAGES AS TABBED-->
+    
+    
+    <local:homePage Title="Home" IconImageSource="homeIcon.png"/>
+    <local:listPage Title="List" IconImageSource="listIcon.png"/>
+    <local:accountPage Title="Account" IconImageSource="accountIcon.png"/>
+    <local:aboutPage Title="About" IconImageSource="aboutIcon.png"/>
+
+
+</TabbedPage>

@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
 namespace projDevMain
 {
     public partial class App : Application
@@ -14,7 +15,7 @@ namespace projDevMain
 
             // Set the SplashScreen as the initial page
             MainPage = new SplashPage();
-            
+           // MainPage = new MainPage();
 
 
         }

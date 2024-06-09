@@ -56,6 +56,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "SQLitePCLRaw.bundle_green": {
+              "target": "Package",
+              "version": "[2.1.8, )"
+            },
             "Xam.Plugins.Forms.ImageCircle": {
               "target": "Package",
               "version": "[3.0.0.5, )"
@@ -67,6 +71,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[5.0.0.2196, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
