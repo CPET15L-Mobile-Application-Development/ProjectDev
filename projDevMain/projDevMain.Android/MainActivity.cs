@@ -3,6 +3,7 @@
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
+using Xamarin.Essentials;
 using Android.OS;
 
 namespace projDevMain.Droid

@@ -4,12 +4,17 @@
              x:Class="projDevMain.GameModalPage"
              BackgroundColor="#212930">
     <ContentPage.Content>
+        
+        
         <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
             <Label Text="Game Name" TextColor="White"/>
             <Entry x:Name="nameEntry" Placeholder="Enter game name" TextColor="White" PlaceholderColor="#adb8bd"/>
 
-            <Label Text="Image URL" TextColor="White"/>
+            <Label Text="Image URL or Import" TextColor="White"/>
             <Entry x:Name="imageEntry" Placeholder="Enter image URL" TextColor="White" PlaceholderColor="#adb8bd"/>
+            <Button Text="Import Image from Phone" Clicked="OnImportImageClicked" BackgroundColor="#5d737e" TextColor="#fcfcfc"/>
+
+            <Image x:Name="gameImage" HeightRequest="150" WidthRequest="150" Aspect="AspectFit"/>
 
             <Label Text="Price" TextColor="White"/>
             <Entry x:Name="priceEntry" Placeholder="Enter price" TextColor="White" PlaceholderColor="#adb8bd"/>

@@ -7,19 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace projDevMain
+namespace projDevMain.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class accountPage : ContentPage
+    public partial class ProfileModalPage : ContentPage
     {
-        public accountPage()
+        public ProfileModalPage()
         {
             InitializeComponent();
-        }
-
-        private void edit_Profile(object sender, EventArgs e)
-        {
-
         }
     }
 }

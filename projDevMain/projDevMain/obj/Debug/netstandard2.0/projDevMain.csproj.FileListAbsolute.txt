@@ -55,3 +55,4 @@ C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netsta
 C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\listPage.xaml.g.cs
 C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\GameModalPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\ProfileModalPage.xaml.g.cs
