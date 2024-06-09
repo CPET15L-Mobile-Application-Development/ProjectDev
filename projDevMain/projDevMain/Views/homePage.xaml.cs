@@ -60,7 +60,7 @@ namespace projDevMain
             catch (Exception ex) { }
         }
 
-
+        //UPON LOGGININ THE USERNAME ADAPTS TO HOMEPAGE USER LABEL
         public void SetUsername(string username)
         {
             var greetingLabel = this.FindByName<Label>("greetingLabel");

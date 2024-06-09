@@ -59,14 +59,14 @@ namespace projDevMain
         }
 
         
-
+        //SWIPEITEM EDIT GAME FUNCTION
         private async void editItem_Invoked(object sender, EventArgs e)
         {
             var item = sender as SwipeItem;
             var game = item.CommandParameter as GameListModel;
             await Navigation.PushAsync(new GameModalPage(game));
         }
-
+        //SWIPE ITEM DELETE GAME FUNCTION
         private async void delItem_Invoked(object sender, EventArgs e)
         {
             var item = sender as SwipeItem;
@@ -78,12 +78,12 @@ namespace projDevMain
                 gameDataView.ItemsSource = await App.Service.getGameList();
             }
         }
-
+        //ADD BUTTON NAVIGATE TO GAME MODAL PAGE
         private async void clickAdd(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new GameModalPage());
         }
-
+        //SEARCH THE DATABASE FROM THE SEARCH BAR STRING
         private async void searchbar_changed(object sender, TextChangedEventArgs e)
         {
             gameDataView.ItemsSource = await App.Service.Search(e.NewTextValue);

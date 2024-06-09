@@ -23,7 +23,7 @@ namespace projDevMain
             Navigation.InsertPageBefore(new registerPage(), this);
             Navigation.PopAsync();
         }
-
+        //CHECKS THE DATABASE FOR CREDENTIALS
         private async void signIn_Clicked(object sender, EventArgs e)
         {
             var usernameEntry = this.FindByName<Entry>("usernameEntry");

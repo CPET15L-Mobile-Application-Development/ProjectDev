@@ -27,7 +27,7 @@ namespace projDevMain
 
         Models.GameListModel _game;
 
-
+        //INITIZALIZE DATABASE ATTRIBUTES
         public GameModalPage(Models.GameListModel game) {
 
             InitializeComponent();
@@ -45,6 +45,7 @@ namespace projDevMain
 
        async void OnSaveClicked(object sender, EventArgs e)
         {
+                //CHECKS FIELDS IF FILLED
             if (string.IsNullOrWhiteSpace(nameEntry.Text) || 
                 string.IsNullOrWhiteSpace(priceEntry.Text) ||
                 string.IsNullOrWhiteSpace(imageEntry.Text) ||
@@ -61,7 +62,7 @@ namespace projDevMain
                 addGame();
             }
         }
-
+        //ADD GAME DETAILS TO DATABASE
         async void addGame()
         {
             await App.Service.addGame(new Models.GameListModel()
@@ -73,8 +74,9 @@ namespace projDevMain
                 Tags = tagsEntry.Text,
 
             });
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(); 
         }
+        //UPDATE GAME DETAILS IN DATABASE
         async void updateGame()
         {
             _game.Name = nameEntry.Text;
@@ -86,6 +88,8 @@ namespace projDevMain
             await App.Service.updateGame(_game);
             await Navigation.PopAsync();
         }
+
+        //IMAGE IMPORT BUTTON LOCALLY OR URL
         async void OnImportImageClicked(object sender, EventArgs e)
         {
             try
@@ -120,7 +124,7 @@ namespace projDevMain
             }
             return imageUrl;
         }
-
+        //SAVE IMAGE LOCALLY FOR FASTER RETRVIEVE
         private async Task<string> SaveFileToLocalStorage(string fileName, Stream fileStream)
         {
             var filePath = Path.Combine(FileSystem.AppDataDirectory, fileName);

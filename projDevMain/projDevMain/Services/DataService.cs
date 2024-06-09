@@ -15,7 +15,7 @@ namespace projDevMain.Services
         
         private readonly SQLiteAsyncConnection _connection;
 
-
+        //NAMING THE DATABASE IS SET TO READONLY
         private static readonly Lazy<SQLiteConnection> lazyInitializer = new Lazy<SQLiteConnection>(() =>
         {
             var path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "app.db3");
@@ -24,38 +24,38 @@ namespace projDevMain.Services
 
         private static SQLiteConnection Database => lazyInitializer.Value;
         private static bool initialized = false;
-
+        //INITIALIZE DATABASE
         public DatabaseService()
         {
             InitializeDatabase();
         }
-
+        //MAKING CONNECTION FROM DATABASE TO GAMELISTMODEL
         public DatabaseService(string dbPath)
         {
             _connection = new SQLiteAsyncConnection(dbPath);
             _connection.CreateTableAsync<GameListModel>();
         }
-
+        //ADD GAME TASK FOR DATABASE
         public Task<int> addGame(GameListModel model) { 
 
             return _connection.InsertAsync(model);
         }
-
+        //RETRIVES THE GAME DATAS FROM DATABASE 
         public Task<List<GameListModel>> getGameList() { 
         
             return _connection.Table<GameListModel>().ToListAsync();
         }
-
+        //UPDATE THE DATABASE FOR CHANGES 
         public Task<int> updateGame(GameListModel game) { 
         
             return _connection.UpdateAsync(game);
         }
-
+        //DELETE GAME FROM THE DATABASE
         public Task<int> deleteGame(GameListModel game) { 
         
             return _connection.DeleteAsync(game);
         }
-
+        //SEARCH FUNCTION FOR GAME IN DATABASE
         public Task<List<GameListModel>> Search(string search) { 
         
             return _connection.Table<GameListModel>().Where( p => p.Name.StartsWith(search)).ToListAsync();

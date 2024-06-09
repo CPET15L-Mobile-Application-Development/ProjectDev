@@ -8,6 +8,8 @@ namespace projDevMain
         {
             InitializeComponent();
         }
+
+        //INSTEAD USING XAML FOR TABBED PAGE, USED C# FOR EASY ACCESS TO BACKEND
         public MainPage(string username) : this()
         {
             var homePage = new homePage(username);
