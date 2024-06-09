@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace projDevMain
 {
@@ -13,8 +7,34 @@ namespace projDevMain
         public MainPage()
         {
             InitializeComponent();
-
         }
+        public MainPage(string username) : this()
+        {
+            var homePage = new homePage(username);
+            homePage.SetUsername(username);
+            Children.Add( new homePage(username)
+            {
+                Title = "Home",
+                IconImageSource = "homeIcon.png"
+            });
+            // Add other pages
+            Children.Add(new listPage()
+            {
+                Title = "List",
+                IconImageSource = "listIcon.png"
+            });
+            Children.Add(new accountPage()
+            {
+                Title = "Account",
+                IconImageSource = "accountIcon.png"
+            });
+            Children.Add(new aboutPage()
+            {
+                Title = "About",
+                IconImageSource = "aboutIcon.png"
+            });
+        }
+
 
     }
 }

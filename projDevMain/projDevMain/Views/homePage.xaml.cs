@@ -15,10 +15,13 @@ namespace projDevMain
 	public partial class homePage : ContentPage
 	{
         ObservableCollection<GameListModel> gamelist;
-        public homePage ()
+        public homePage (string username)
 		{
 			InitializeComponent ();
-            
+            // Set the greeting label
+            var greetingLabel = this.FindByName<Label>("greetingLabel");
+            greetingLabel.Text = $"Welcome, {username}!";
+
 
             //STATIC POPULATE DATA
             //NOTE: BETTER IF THERE IS AN IMPLEMENTATION OF SQL
@@ -46,6 +49,11 @@ namespace projDevMain
             //PASS THE DATA FROM THE DEFINED "gamelist" TO THE x:Name="gameCollectionView"
             gameDataView.ItemsSource = gamelist;
         }
+        public void SetUsername(string username)
+        {
+            var greetingLabel = this.FindByName<Label>("greetingLabel");
+            greetingLabel.Text = $"Welcome, {username}!";
+        }
 
-	}
+    }
 }

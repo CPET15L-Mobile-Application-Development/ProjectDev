@@ -9,7 +9,8 @@
         <StackLayout HorizontalOptions="CenterAndExpand">
             <!--HEADER PROFILE GREETING-->
             <StackLayout Orientation="Horizontal" Spacing="155" Padding="25,10,25,5" VerticalOptions="Center" BackgroundColor="#3f4045">
-                <Label x:Name="greetingLabel" Text="" FontSize="Medium" TextColor="#adb8bd" HorizontalOptions="Start"/> <!--Greets the USER-->
+                <Label  x:Name="greetingLabel" Text="" FontSize="Medium" TextColor="#adb8bd" HorizontalOptions="Start"/> <!--Greets the USER-->
+                <ImageButton Source="user.png" HeightRequest="30" WidthRequest="30"/>
             </StackLayout>
             
             <!--SEARCH GUI SECTION-->

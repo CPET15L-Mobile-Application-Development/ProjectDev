@@ -12,12 +12,5 @@
              android:TabbedPage.ToolbarPlacement="Bottom">
     
     <!--INCLUDE ALL PAGES AS TABBED-->
-    
-    
-    <local:homePage Title="Home" IconImageSource="homeIcon.png"/>
-    <local:listPage Title="List" IconImageSource="listIcon.png"/>
-    <local:accountPage Title="Account" IconImageSource="accountIcon.png"/>
-    <local:aboutPage Title="About" IconImageSource="aboutIcon.png"/>
-
 
 </TabbedPage>

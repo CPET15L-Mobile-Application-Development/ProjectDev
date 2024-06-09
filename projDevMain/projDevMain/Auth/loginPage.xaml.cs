@@ -1,9 +1,8 @@
-﻿using System;
+﻿// loginpage.xaml.cs
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using projDevMain.Services;
-using projDevMain.ViewModels;
-using projDevMain.Views;
+using System;
 
 namespace projDevMain
 {
@@ -16,14 +15,11 @@ namespace projDevMain
         {
             InitializeComponent();
             _databaseService = new DatabaseService();
-
-            //NAVIGATION PAGE PROPERTIES
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private void RegisterPage_Tapped(object sender, EventArgs e)
         {
-            // Replace the current page with the registerPage
             Navigation.InsertPageBefore(new registerPage(), this);
             Navigation.PopAsync();
         }
@@ -38,8 +34,8 @@ namespace projDevMain
             {
                 await DisplayAlert("Success", "Login successful!", "OK");
                 // Navigate to home page with username
-                
-               
+                Navigation.InsertPageBefore(new MainPage(user.Username), this);
+                await Navigation.PopAsync();
             }
             else
             {

@@ -70,15 +70,15 @@ namespace projDevMain
                     Password = bindingContext.Password
                 };
                 _databaseService.SaveUser(user);
-                await DisplayAlert("Success","Account registered successfully","OK");
-            
-                //NAVIGATE TO HOMEPAGE
+                await DisplayAlert("Success", "Account registered successfully", "OK");
+
+                // Navigate to login page
                 Navigation.InsertPageBefore(new loginPage(), this);
                 await Navigation.PopAsync();
             }
             else
             {
-                await DisplayAlert("ERROR","Please ensure all fields are filled","OK");
+                await DisplayAlert("ERROR", "Please ensure all fields are filled", "OK");
             }
         }
     }
