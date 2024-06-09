@@ -15,8 +15,8 @@
             <!--LOGIN PART-->
             <Label Text="Login" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
             <StackLayout Spacing="15" HorizontalOptions="CenterAndExpand">
-                <Entry x:Name="usernameEntry" Text="{Binding Username}" Placeholder="Username" PlaceholderColor="#adb8bd" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
-                <Entry x:Name="passwordEntry" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
+                <Entry x:Name="usernameEntry" TextColor="White" Text="{Binding Username}" Placeholder="Username" PlaceholderColor="#adb8bd" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
+                <Entry x:Name="passwordEntry" TextColor="White" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
             </StackLayout>
             <Button TextColor="#fcfcfc" BackgroundColor="#5d737e" Text="Sign In" FontSize="15" CornerRadius="5" Margin="0,20,0,20" WidthRequest="150" Clicked="signIn_Clicked"/>
             

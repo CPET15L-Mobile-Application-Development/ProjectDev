@@ -13,11 +13,12 @@ namespace projDevMain
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class listPage : ContentPage
     {
-        ObservableCollection<GameListModel> gamelist;
+       // ObservableCollection<GameListModel> gamelist;
         public listPage()
         {
             InitializeComponent();
 
+            /*
             //STATIC POPULATE DATA
             //NOTE: BETTER IF THERE IS AN IMPLEMENTATION OF SQL
             gamelist = new ObservableCollection<GameListModel>
@@ -42,8 +43,50 @@ namespace projDevMain
             };
 
             //PASS THE DATA FROM THE DEFINED "gamelist" TO THE x:Name="gameCollectionView"
-            gameDataView.ItemsSource = gamelist;
+            gameDataView.ItemsSource = gamelist; */
 
+        }
+
+        protected override async void OnAppearing()
+        {
+            try
+            {
+                base.OnAppearing();
+                gameDataView.ItemsSource = await App.Service.getGameList();
+
+            }
+            catch (Exception ex) { }
+        }
+
+        
+
+        private async void editItem_Invoked(object sender, EventArgs e)
+        {
+            var item = sender as SwipeItem;
+            var game = item.CommandParameter as GameListModel;
+            await Navigation.PushAsync(new GameModalPage(game));
+        }
+
+        private async void delItem_Invoked(object sender, EventArgs e)
+        {
+            var item = sender as SwipeItem;
+            var game = item.CommandParameter as GameListModel;
+            var result = await DisplayAlert("Delete", $"Delete {game.Name} from the database", "Yes", "No");
+            if (result)
+            {
+                await App.Service.deleteGame(game);
+                gameDataView.ItemsSource = await App.Service.getGameList();
+            }
+        }
+
+        private async void clickAdd(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GameModalPage());
+        }
+
+        private async void searchbar_changed(object sender, TextChangedEventArgs e)
+        {
+            gameDataView.ItemsSource = await App.Service.Search(e.NewTextValue);
         }
     }
 }

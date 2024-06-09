@@ -14,9 +14,9 @@
             <Label Text="Register" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
             <Label Text="{Binding CanSignUp}" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
             <StackLayout Spacing="15" HorizontalOptions="CenterAndExpand">
-                <Entry Text="{Binding Username}" Placeholder="Username" PlaceholderColor="#adb8bd" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
-                <Entry Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15" TextChanged="Entry_TextChanged"></Entry>
-                <Entry  Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15" TextChanged="Entry_TextChanged"></Entry>
+                <Entry TextColor="White" Text="{Binding Username}" Placeholder="Username" PlaceholderColor="#adb8bd" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
+                <Entry TextColor="White" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15" TextChanged="Entry_TextChanged"></Entry>
+                <Entry TextColor="White" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15" TextChanged="Entry_TextChanged"></Entry>
                 
                 <!--TERMS AND CONDITION MODAL-->
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">

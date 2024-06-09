@@ -9,7 +9,7 @@
             <StackLayout HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional">
                 <!--HEADER FUNCTION FOR SEARCH-->
                 <Label Text="Manage your Games" Margin="0,10,0,0" FontSize="Medium" TextColor="White"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
-                <SearchBar Margin="15,5,15,5" HeightRequest="35" HorizontalOptions="FillAndExpand" Placeholder="Search games" BackgroundColor="#5d737e" PlaceholderColor="#adb8bd" TextColor="White"/>
+                <SearchBar TextChanged="searchbar_changed" Margin="15,5,15,5" HeightRequest="35" HorizontalOptions="FillAndExpand" Placeholder="Search games" BackgroundColor="#5d737e" PlaceholderColor="#adb8bd" TextColor="White"/>
 
                 <!--COLLECTION VIEW STARTS HERE-->
                 <StackLayout  BackgroundColor="#30292f">
@@ -21,8 +21,16 @@
                                     <!--FUNCTION FOR SWIPE RIGHT ITEMS-->
                                     <SwipeView.RightItems>
                                         <SwipeItems>
-                                            <SwipeItem Text="Edit" BackgroundColor="#786cff" IconImageSource="editIcon.png"/>
-                                            <SwipeItem Text="Delete" BackgroundColor="#9d0303" IconImageSource="deleteIcon.png"/>
+                                            <SwipeItem Text="Edit" 
+                                                       BackgroundColor="#786cff" 
+                                                       IconImageSource="editIcon.png"
+                                                       CommandParameter="{Binding .}"
+                                                       Invoked="editItem_Invoked"/>
+                                            <SwipeItem Text="Delete" 
+                                                       BackgroundColor="#9d0303" 
+                                                       IconImageSource="deleteIcon.png"
+                                                       CommandParameter="{Binding .}"
+                                                       Invoked="delItem_Invoked"/>
                                         </SwipeItems>
                                     </SwipeView.RightItems>
 
@@ -46,7 +54,7 @@
             </StackLayout>
             
             <!--FLOATING ADD ITEM BUTTON-->
-            <ImageButton AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional" Source="addSymbol.png" BackgroundColor="#adb8bd" BorderColor="#212930" BorderWidth="2" Padding="15" Margin="0,0,15,35" CornerRadius="35" HeightRequest="65" WidthRequest="65"/>
+            <ImageButton Clicked="clickAdd" AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional" Source="addSymbol.png" BackgroundColor="#adb8bd" BorderColor="#212930" BorderWidth="2" Padding="15" Margin="0,0,15,35" CornerRadius="35" HeightRequest="65" WidthRequest="65"/>
         </AbsoluteLayout>
         
     </ContentPage.Content>

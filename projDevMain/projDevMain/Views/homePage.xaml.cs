@@ -14,7 +14,7 @@ namespace projDevMain
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class homePage : ContentPage
 	{
-        ObservableCollection<GameListModel> gamelist;
+       // ObservableCollection<GameListModel> gamelist;
         public homePage (string username)
 		{
 			InitializeComponent ();
@@ -22,7 +22,7 @@ namespace projDevMain
             var greetingLabel = this.FindByName<Label>("greetingLabel");
             greetingLabel.Text = $"Welcome, {username}!";
 
-
+        /*
             //STATIC POPULATE DATA
             //NOTE: BETTER IF THERE IS AN IMPLEMENTATION OF SQL
             gamelist = new ObservableCollection<GameListModel>
@@ -47,8 +47,20 @@ namespace projDevMain
             };
 
             //PASS THE DATA FROM THE DEFINED "gamelist" TO THE x:Name="gameCollectionView"
-            gameDataView.ItemsSource = gamelist;
+            gameDataView.ItemsSource = gamelist;*/
         }
+        protected override async void OnAppearing()
+        {
+            try
+            {
+                base.OnAppearing();
+                gameDataView.ItemsSource = await App.Service.getGameList();
+
+            }
+            catch (Exception ex) { }
+        }
+
+
         public void SetUsername(string username)
         {
             var greetingLabel = this.FindByName<Label>("greetingLabel");
