@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projDevMain.listPage"
+             BackgroundColor="#212930">
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional">
+                <!--HEADER FUNCTION FOR SEARCH-->
+                <Label Text="Manage your Games" Margin="0,10,0,0" FontSize="Medium" TextColor="White"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                <SearchBar TextChanged="searchbar_changed" Margin="15,5,15,5" HeightRequest="35" HorizontalOptions="FillAndExpand" Placeholder="Search games" BackgroundColor="#5d737e" PlaceholderColor="#adb8bd" TextColor="White"/>
+
+                <!--COLLECTION VIEW STARTS HERE-->
+                <StackLayout  BackgroundColor="#30292f">
+                    <CollectionView x:Name="gameDataView">
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <!--SWIPE VIEW STARTS HERE-->
+                                <SwipeView>
+                                    <!--FUNCTION FOR SWIPE RIGHT ITEMS-->
+                                    <SwipeView.RightItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Edit" 
+                                                       BackgroundColor="#786cff" 
+                                                       IconImageSource="editIcon.png"
+                                                       CommandParameter="{Binding .}"
+                                                       Invoked="editItem_Invoked"/>
+                                            <SwipeItem Text="Delete" 
+                                                       BackgroundColor="#9d0303" 
+                                                       IconImageSource="deleteIcon.png"
+                                                       CommandParameter="{Binding .}"
+                                                       Invoked="delItem_Invoked"/>
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+
+                                    <!--FORMAT FOR THE LAYOU OF EACH LIST-->
+                                    <StackLayout Orientation="Horizontal" Margin="15,5,15,5">
+                                        <Image Source="{Binding Image}" HeightRequest="100"/>
+
+                                        <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10">
+                                            <Label Text="{Binding Name}" FontFamily="Gilroy-Bold" FontSize="Medium"/>
+                                            <Label Text="{Binding Price}" FontFamily="Gilroy-Regular" FontSize="Small"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </SwipeView>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+                </StackLayout>
+                
+
+            </StackLayout>
+            
+            <!--FLOATING ADD ITEM BUTTON-->
+            <ImageButton Clicked="clickAdd" AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional" Source="addSymbol.png" BackgroundColor="#adb8bd" BorderColor="#212930" BorderWidth="2" Padding="15" Margin="0,0,15,35" CornerRadius="35" HeightRequest="65" WidthRequest="65"/>
+        </AbsoluteLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

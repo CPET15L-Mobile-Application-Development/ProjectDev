@@ -1,0 +1,74 @@
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.deps.json
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.dll
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\ref\projDevMain.dll
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.pdb
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.csproj.AssemblyReference.cache
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Auth\loginPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Auth\registerPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\SplashPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfoInputs.cache
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfo.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.csproj.CoreCompileInputs.cache
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.sourcelink.json
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.dll
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\refint\projDevMain.dll
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.pdb
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\aboutPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\accountPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\homePage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\listPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\GameModalPage.xaml.g.cs
+C:\Users\Wataru\source\repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\ProfileModalPage.xaml.g.cs
+D:\Downloads\Compressed\ProjectDev-main\ProjectDev-main\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.dll
+D:\Downloads\Compressed\ProjectDev-main\ProjectDev-main\projDevMain\projDevMain\obj\Debug\netstandard2.0\refint\projDevMain.dll
+D:\Downloads\Compressed\ProjectDev-main\ProjectDev-main\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.pdb
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.csproj.AssemblyReference.cache
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Auth\loginPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Auth\registerPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\GameModalPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\ProfileModalPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\aboutPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\accountPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\homePage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\listPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\ProfileModalPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\SplashPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfoInputs.cache
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfo.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.csproj.CoreCompileInputs.cache
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.dll
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\refint\projDevMain.dll
+D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.pdb
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.deps.json
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.dll
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\ref\projDevMain.dll
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.pdb
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.csproj.AssemblyReference.cache
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Auth\loginPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Auth\registerPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\GameModalPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\ProfileModalPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\aboutPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\accountPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\homePage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\listPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\ProfileModalPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\SplashPage.xaml.g.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfoInputs.cache
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfo.cs
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.csproj.CoreCompileInputs.cache
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.sourcelink.json
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.dll
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\refint\projDevMain.dll
+D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.pdb
