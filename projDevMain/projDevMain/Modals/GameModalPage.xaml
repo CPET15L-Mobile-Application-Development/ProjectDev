@@ -9,11 +9,11 @@
             <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
                 <!--MAIN TITLE OF THE MODAL-->
                 <Label Text="Add New Game to the Library" TextColor="White" FontFamily="Gilroy-Bold" FontSize="Large"/>
-                
+
                 <!--INSERT NAME PORTION-->
                 <Label Text="Name:" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0"/>
                 <Entry x:Name="nameEntry" Placeholder="Enter game name" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
-                
+
                 <!--INSERT IMAGE PORTION-->
                 <Label Text="Image:" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0" />
                 <Frame CornerRadius="10" BackgroundColor="#38353a" HasShadow="True" Padding="5" HorizontalOptions="Center">
@@ -23,7 +23,7 @@
                 <Entry x:Name="imageEntry" Placeholder="Enter image URL" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930" Margin="35,5,35,0" HeightRequest="40"/>
                 <Label Text="--------------- or ---------------" TextColor="#adb8bd" FontFamily="Gilroy-Regular" HorizontalOptions="CenterAndExpand"/>
                 <Button Text="🖼️ Import Image from Phone" HorizontalOptions="CenterAndExpand" Clicked="OnImportImageClicked" BackgroundColor="#212930" TextColor="#fcfcfc" HeightRequest="40" CornerRadius="10" Margin="30,5,30,0"/>
-                
+
                 <!--INSERT DESCRIPTION PORTION-->
                 <!-- + NEWLY UPDATED PROTION PLEASE FOCUS-->
                 <Label Text="Description:" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0" />
@@ -32,12 +32,12 @@
                 <!--INSERT PRICE PORTION-->
                 <!--NOTE: PRICE MUST BE EXPRESSED IN NUMBER ONLY, YOU CAN CHANGE THE KEYBOARD LAYOUT INTO NUMBERS INSTEAD OF WHOLE KEYBOARD-->
                 <Label Text="Price" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0"/>
-                <Entry x:Name="priceEntry" Placeholder="Enter price" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
-                
+                <Entry x:Name="priceEntry" Placeholder="Enter price" Keyboard="Numeric" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
+
                 <!--INSERT RATING PORTION-->
                 <Label Text="Rating" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0"/>
                 <Entry x:Name="ratingEntry" Placeholder="Enter rating" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
-                
+
                 <!--INSERT TAGS PORTION-->
                 <Label Text="Tags" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0"/>
                 <Entry x:Name="tagsEntry" Placeholder="Enter tags (comma-separated)" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
@@ -45,5 +45,5 @@
                 <Button Text="Save" Clicked="OnSaveClicked" FontFamily="Gilroy-Bold" FontSize="Medium" BackgroundColor="#212930" TextColor="#fcfcfc" Margin="15"/>
             </StackLayout>
         </ScrollView>
-   </ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

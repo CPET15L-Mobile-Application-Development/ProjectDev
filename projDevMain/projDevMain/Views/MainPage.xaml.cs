@@ -1,31 +1,37 @@
-﻿using Xamarin.Forms;
+﻿using projDevMain.Models;
+using System.Runtime.CompilerServices;
+using Xamarin.Forms;
 
 namespace projDevMain
 {
     public partial class MainPage : TabbedPage
     {
-        public MainPage()
+
+        private User currentUser;
+
+        public MainPage(User user)
         {
             InitializeComponent();
-        }
+            currentUser = user;
 
-        //INSTEAD USING XAML FOR TABBED PAGE, USED C# FOR EASY ACCESS TO BACKEND
-        public MainPage(string username) : this()
-        {
-            var homePage = new homePage(username);
-            homePage.SetUsername(username);
-            Children.Add( new homePage(username)
+            var homePage = new homePage(currentUser);
+            var listPage = new listPage();
+            var accountPage = new accountPage(currentUser);
+            var aboutPage = new aboutPage();
+
+            homePage.SetUsername(currentUser.Username);
+
+            Children.Add(new homePage(currentUser)
             {
                 Title = "Home",
                 IconImageSource = "homeIcon.png"
             });
-            // Add other pages
             Children.Add(new listPage()
             {
                 Title = "List",
                 IconImageSource = "listIcon.png"
             });
-            Children.Add(new accountPage()
+            Children.Add(new accountPage(currentUser)
             {
                 Title = "Account",
                 IconImageSource = "accountIcon.png"
@@ -36,6 +42,7 @@ namespace projDevMain
                 IconImageSource = "aboutIcon.png"
             });
         }
+
 
 
     }

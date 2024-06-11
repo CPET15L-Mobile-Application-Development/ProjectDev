@@ -12,7 +12,7 @@ namespace projDevMain.Services
 {
     public class DatabaseService
     {
-        
+
         private readonly SQLiteAsyncConnection _connection;
 
         //NAMING THE DATABASE IS SET TO READONLY
@@ -36,29 +36,34 @@ namespace projDevMain.Services
             _connection.CreateTableAsync<GameListModel>();
         }
         //ADD GAME TASK FOR DATABASE
-        public Task<int> addGame(GameListModel model) { 
+        public Task<int> addGame(GameListModel model)
+        {
 
             return _connection.InsertAsync(model);
         }
         //RETRIVES THE GAME DATAS FROM DATABASE 
-        public Task<List<GameListModel>> getGameList() { 
-        
+        public Task<List<GameListModel>> getGameList()
+        {
+
             return _connection.Table<GameListModel>().ToListAsync();
         }
         //UPDATE THE DATABASE FOR CHANGES 
-        public Task<int> updateGame(GameListModel game) { 
-        
+        public Task<int> updateGame(GameListModel game)
+        {
+
             return _connection.UpdateAsync(game);
         }
         //DELETE GAME FROM THE DATABASE
-        public Task<int> deleteGame(GameListModel game) { 
-        
+        public Task<int> deleteGame(GameListModel game)
+        {
+
             return _connection.DeleteAsync(game);
         }
         //SEARCH FUNCTION FOR GAME IN DATABASE
-        public Task<List<GameListModel>> Search(string search) { 
-        
-            return _connection.Table<GameListModel>().Where( p => p.Name.StartsWith(search)).ToListAsync();
+        public Task<List<GameListModel>> Search(string search)
+        {
+
+            return _connection.Table<GameListModel>().Where(p => p.Name.StartsWith(search)).ToListAsync();
         }
 
 
@@ -78,6 +83,7 @@ namespace projDevMain.Services
         {
             return Database.Insert(user);
         }
+        public int UpdateUser(User user) { return Database.Update(user); }
 
         public User GetUser(string username, string password)
         {

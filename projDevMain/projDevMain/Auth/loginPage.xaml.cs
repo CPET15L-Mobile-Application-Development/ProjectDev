@@ -33,8 +33,8 @@ namespace projDevMain
             if (user != null)
             {
                 await DisplayAlert("Success", "Login successful!", "OK");
-                // Navigate to home page with username
-                Navigation.InsertPageBefore(new MainPage(user.Username), this);
+                // Navigate to home page with user object
+                Navigation.InsertPageBefore(new MainPage(user), this); // Pass the User object directly
                 await Navigation.PopAsync();
             }
             else
@@ -42,5 +42,6 @@ namespace projDevMain
                 await DisplayAlert("Error", "Invalid username or password.", "OK");
             }
         }
+
     }
 }

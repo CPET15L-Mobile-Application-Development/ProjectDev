@@ -25,7 +25,6 @@ namespace projDevMain
                 "- Contains at least one number\n" +
                 "- Contains at least one special character",
                 "OK");
-           
 
             //NAVIGATION PAGE PROPERTIES
             NavigationPage.SetHasNavigationBar(this, false);
@@ -53,12 +52,6 @@ namespace projDevMain
             }
         }
 
-        //TERMS AND CONDITION FUNCTION
-        private void termsCondition_modal_Tapped(object sender, EventArgs e)
-        {
-
-        }
-
         private async void signUp_Clicked(object sender, EventArgs e)
         {
             var bindingContext = (RegisterPageViewModel)BindingContext;
@@ -78,8 +71,11 @@ namespace projDevMain
             }
             else
             {
-                await DisplayAlert("ERROR", "Please ensure all fields are filled", "OK");
+                await DisplayAlert("ERROR", "Please ensure all fields are filled correctly", "OK");
             }
         }
+
+        //TERMS AND CONDITION FUNCTION
+
     }
 }

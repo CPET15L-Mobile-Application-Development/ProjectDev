@@ -13,7 +13,7 @@ namespace projDevMain
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class listPage : ContentPage
     {
-       // ObservableCollection<GameListModel> gamelist;
+        // ObservableCollection<GameListModel> gamelist;
         public listPage()
         {
             InitializeComponent();
@@ -58,7 +58,7 @@ namespace projDevMain
             catch (Exception ex) { }
         }
 
-        
+
         //SWIPEITEM EDIT GAME FUNCTION
         private async void editItem_Invoked(object sender, EventArgs e)
         {
@@ -84,9 +84,17 @@ namespace projDevMain
             await Navigation.PushAsync(new GameModalPage());
         }
         //SEARCH THE DATABASE FROM THE SEARCH BAR STRING
+        private List<GameListModel> allGames;
         private async void searchbar_changed(object sender, TextChangedEventArgs e)
         {
-            gameDataView.ItemsSource = await App.Service.Search(e.NewTextValue);
+            if (allGames == null)
+            {
+                allGames = await App.Service.getGameList();
+            }
+
+            var searchTerm = e.NewTextValue?.ToLower();
+            var filteredGames = allGames.Where(p => p.Name.ToLower().Contains(searchTerm)).ToList();
+            gameDataView.ItemsSource = filteredGames;
         }
     }
 }
