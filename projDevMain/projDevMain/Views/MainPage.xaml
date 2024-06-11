@@ -6,6 +6,7 @@
                 
              NavigationPage.TitleIconImageSource="topBrand.png"
              BarBackgroundColor="#02111b"
+             BackgroundColor="#02111b"
              SelectedTabColor="#5d737e"
              UnselectedTabColor="#fcfcfc"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"

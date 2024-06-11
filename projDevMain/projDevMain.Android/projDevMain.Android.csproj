@@ -85,9 +85,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\about.png" />
-    <AndroidResource Include="Resources\drawable\aboutIcon.png" />
-    <AndroidResource Include="Resources\drawable\accountIcon.png" />
     <AndroidResource Include="Resources\drawable\addItem.png" />
     <AndroidResource Include="Resources\drawable\addSymbol.png" />
     <AndroidResource Include="Resources\drawable\cartIcon.png" />
@@ -108,15 +105,10 @@
     <AndroidResource Include="Resources\drawable\gameS4.png" />
     <AndroidResource Include="Resources\drawable\gameSDV.png" />
     <AndroidResource Include="Resources\drawable\gameTW.png" />
-    <AndroidResource Include="Resources\drawable\home.png" />
-    <AndroidResource Include="Resources\drawable\homeIcon.png" />
     <AndroidResource Include="Resources\drawable\JBimages.png" />
     <AndroidResource Include="Resources\drawable\JBprofile.png" />
     <AndroidResource Include="Resources\drawable\JBwallpaper.png" />
-    <AndroidResource Include="Resources\drawable\list.png" />
-    <AndroidResource Include="Resources\drawable\listIcon.png" />
     <AndroidResource Include="Resources\drawable\logoMain.png" />
-    <AndroidResource Include="Resources\drawable\profile.png" />
     <AndroidResource Include="Resources\drawable\socFB.png" />
     <AndroidResource Include="Resources\drawable\socGit.png" />
     <AndroidResource Include="Resources\drawable\socInsta.png" />
@@ -145,6 +137,18 @@
     <AndroidResource Include="Resources\drawable\JBimage4.png" />
     <AndroidResource Include="Resources\drawable\JBimage5.png" />
     <AndroidResource Include="Resources\drawable\JBimage6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\aboutIcon.png" />
+    <AndroidResource Include="Resources\drawable\accountIcon.png" />
+    <AndroidResource Include="Resources\drawable\homeIcon.png" />
+    <AndroidResource Include="Resources\drawable\listIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\drawable\about.png" />
+    <Content Include="Resources\drawable\home.png" />
+    <Content Include="Resources\drawable\list.png" />
+    <Content Include="Resources\drawable\profile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

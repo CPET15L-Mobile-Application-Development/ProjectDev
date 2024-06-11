@@ -7,5 +7,7 @@ namespace projDevMain.Models
     class AccountImageModel
     {
         public string accImage { get; set; }
+
+        public string imgTitle { get; set; }
     }
 }

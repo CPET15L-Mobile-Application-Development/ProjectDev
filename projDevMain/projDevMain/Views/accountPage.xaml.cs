@@ -1,4 +1,5 @@
-﻿using projDevMain.Models;
+﻿using projDevMain.Modals;
+using projDevMain.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -33,7 +34,16 @@ namespace projDevMain
             accImgDataView.ItemsSource = imageCollection;
         }
 
-        //EDIT PROFILE FUNCTION
+        //EDIT ACCOUNT INFORMATION MODAL FUNCTION
+        private async void editInfo(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AccountInfoModalPage());
+        }
 
+        //EDIT IMAGE INFORMATION MODAL FUNCTION
+        private async void editImages(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ImageInfoModalPage());
+        }
     }
 }

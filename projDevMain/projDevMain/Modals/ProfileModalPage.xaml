@@ -31,6 +31,8 @@
                         <ImageButton Source="socLink.png" BackgroundColor="Transparent"/>
                         <ImageButton Source="socGit.png" BackgroundColor="Transparent"/>
                     </StackLayout>
+
+                    <Button Text="Log Out" Margin="15,20,15,5" TextColor="#e24300" BackgroundColor="#212930" CornerRadius="10" BorderColor="#e24300" BorderWidth="3"/>
                 </StackLayout>
             </Frame> 
         </StackLayout>

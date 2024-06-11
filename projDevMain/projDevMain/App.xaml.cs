@@ -36,12 +36,13 @@ namespace projDevMain
             InitializeComponent();
             
 
-            // Set the SplashScreen as the initial page
+            //SET THE SPLASHSCREEN AS THE INITIAL PAGE
             MainPage = new SplashPage();
 
             //CHANGE THE BAR BACKGROUND COLOR
-            NavigationPage navigationPage = new NavigationPage(new MainPage());
-            navigationPage.BarBackgroundColor = Xamarin.Forms.Color.FromHex("#00141C");
+            //NavigationPage navigationPage = new NavigationPage(new MainPage());
+            //navigationPage.BarBackgroundColor = Xamarin.Forms.Color.FromHex("#00141C");
+
 
         }
 
