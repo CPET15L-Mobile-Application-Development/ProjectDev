@@ -1,66 +1,74 @@
-# CPET15L - Mobile Application Development
+# 📱 CPET15L - Mobile Application Development 
+**TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES - MANILA CAMPUS**  
+**COLLEGE OF INDUSTRIAL TECHNOLOGY**
 
-**PROJECT:** Mobile Application Point of Sale
-**PROJECT TITLE:** CHARON
-**CREATED BY:** Mission & Pancho
+![Charon Logo](https://github.com/CPET15L-Mobile-Application-Development/ProjectDev/blob/joeyboymission-patch-bug-fix/logoHIGH.png)
+
+**PROJECT:** Mobile Application Point of Sale  
+**PROJECT TITLE:** CHARON  
+**CREATED BY:** Mission & Pancho  
 **YEAR:** 2024-2025
 
-**TABLE OF CONTENTS**
-
-* [About Charon](#about-charon)
-* [Features](#features)
-* [Getting Started](#getting-started)
+## TABLE OF CONTENTS
+* [About Charon](#ℹ️-about-charon)
+* [Features](#✅-features)
+* [Getting Started](#✅-getting-started)
     * [Prerequisites](#prerequisites)
     * [Installation](#installation)
 * [Usage](#usage)
-    * [Managing Games](#managing-games)
-        * Adding Games
-        * Deleting Games
-    * [Creating Games](*Optional, see note below*)
-* [Contributing](#contributing)
-* [License](#license)
+    * [Managing Games](#✏️-managing-games)
+        * [Adding Games](#➕-adding-games)
+        * [Deleting Games](#➖-deleting-games)
+* [The Developers](#🧑‍💻-the-developers)
+* [Special Thanks To](#💌-special-thanks-to)
 
-## About Charon {#about-charon}
+## ℹ️ About Charon
+Charon is a powerful game library application that empowers you to effortlessly manage, create, and delete your games. It provides a user-friendly interface to streamline your game collection organization. The application consists of different pages/views for navigation, including Home, List, Account, and About. These pages offer various previews and functions for you to explore.
 
-Charon is a powerful game library application that empowers you to effortlessly manage, create, and delete your games. It provides a user-friendly interface (details on the interface type can be filled in here) to streamline your game collection organization.
-
-## Features {#features}
-
+## ✅ Features
 * **Seamless Game Management:** Easily add, remove, and track your games. This empowers users to create and manage their own custom game libraries within the application.
 * **Intuitive Interface:** A navigation bar provides easy access to different views (home page, list page, account page, and about page). Additionally, the dark mode option allows users to browse the application comfortably for extended periods without eye strain.
 * **Efficient Organization:** This game application allows users to view their game library in a well-organized manner, typically categorized by genre, pricing, and popularity. The application offers two pleasing organizational views: collection and list. This flexibility allows users to browse and search for their favorite games efficiently.
 * **Login & Register:** Users can log in to existing accounts or register for new accounts.
 
-## Getting Started {#getting-started}
+## ✅ Getting Started
 
-### Prerequisites {#prerequisites}
+### Prerequisites
+To create and build programs, we developers use Xamarin, which is integrated with Visual Studio Code. Xamarin utilizes both XAML for the front-end design (GUI) and the C# language for the "code-behind" functionality that handles the application's logic. The integrated development environment (IDE) Visual Studio Code allows us to debug, modify, and deploy the application easily due to its comprehensive and centralized features.
 
-(List any required software or libraries needed to run the application, e.g., specific programming language, development environment)
+### Installation
+The application is currently available in a release on our [GitHub repository](https://github.com/CPET15L-Mobile-Application-Development/ProjectDev.git). This release includes a single application installable only on Android devices in the .apk format. An iOS version will be available in a future patch.
 
-### Installation {#installation}
+We plan to upload the application to the Google Play Store or App Store to provide a verified and secure download with a legitimate certificate. This will allow users to download the application safely without relying on third-party installers.
 
-(Provide clear instructions on how to install Charon, including any dependencies. Consider different installation methods if applicable, e.g., downloading an app, building from source)
+## Usage
 
-## Usage {#usage}
+### ✏️ Managing Games
 
-### Managing Games {#managing-games}
+#### ➕ Adding Games
+To add a game to their library, users can navigate to the "List Page" by clicking the navigation icons at the bottom of the screen. A "+" symbol button in the bottom right corner indicates the option to add a new game. Clicking this button will display a pop-up window (push modal) where you can fill in the required fields and upload an image for your chosen game.
 
-#### Adding Games
+#### ➖ Deleting Games
+To delete a game, in the game list you can swipe right of the list view items. This will show an underlay of options which are the modify and delete. If the user wishes to delete this the item will be deleted once the user clicked the button. Note that this change cannot be reverted back, or else you will need to re-add the item to the library.
 
-(Explain how users can add games to their library)
+## 🧑‍💻 The Developers
 
-#### Deleting Games
+### Joey Boy Mission
+I am a 3rd-year undergraduate student at the Technological University of the Philippines, pursuing a Bachelor of Engineering Technology Major in Computer Engineering Technology. I developed this application as part of the requirements of the course Mobile Application Programming and Design under the guidance of Prof. Ramel Dumosdos.
 
-(Explain how users can remove games from their library)
+Driven by a passion for technology, particularly network engineering, computer engineering, and entrepreneurship, I am an aspiring full-stack developer. The dream, of course, is to head a large tech company, but for now, the objective remains to accumulate experience and skills.
 
-### Creating Games (*Optional*)
+To my family - Emily and Prince, my loved one - Chin.
 
-(If Charon allows game creation, explain how to do so, including details on any specific data required for creation. Note: If Charon doesn't support game creation, remove this section)
+### Michael Angilo Pancho
+I am a 21-year-old third-year college student at the Technological University of the Philippines - Manila. I am passionate about technology and aspire to become a software engineer, network engineer, or entrepreneur. Currently, I am developing an innovative app for my Mobile Programming subject, guided by Mr. Ramel Dumosdos. This project allows me to apply and expand my skills in mobile app development, bringing me closer to my career goals.
 
-## Contributing {#contributing}
+I am committed to continuously learning and improving my technical skills. Through dedication and hard work, I aim to make a meaningful impact in the world of technology. My journey is fueled by the desire to acquire the expertise necessary for success in my chosen field, and I am excited about the future opportunities that lie ahead.
 
-(We welcome contributions from the community! If you have improvements, bug fixes, or new features in mind, feel free to fork the repository and submit a pull request. Please refer to the CONTRIBUTING.md file (create one if it doesn't exist) for detailed guidelines.)
+## 💌 Special Thanks To
 
-## License {#license}
+### Professor Ramel Dumosdos
+We would like to express our sincere gratitude to Professor Ramel Dumosdos for his invaluable guidance and support throughout the development of this application. His expertise and motivation were instrumental in helping us bring this project to life.
 
-(Insert your chosen license, e.g., MIT License). You can find the full license in the LICENSE file.
+### Family and Friends
+We would also like to extend our heartfelt thanks to our family and friends for their unwavering support during this journey. Their encouragement and belief in us kept us motivated and helped us overcome challenges.
