@@ -29,7 +29,7 @@ namespace projDevMain.Modals
                 new AccountImageModel {imgTitle = "Image 5"},
                 new AccountImageModel {imgTitle = "Image 6"},         
             };
-           // accImgDataView.ItemsSource = imageCollection; 
+            accImgDataView.ItemsSource = imageCollection; 
         }
 	}
 }

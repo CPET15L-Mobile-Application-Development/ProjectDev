@@ -38,6 +38,7 @@ namespace projDevMain
             imageEntry.Text = _game.Image;
             priceEntry.Text = _game.Price;
             ratingEntry.Text = _game.Rating;
+            descripEntry.Text = _game.Description;
             tagsEntry.Text = _game.Tags;
             nameEntry.Focus();
 
@@ -72,6 +73,7 @@ namespace projDevMain
                 Price = priceEntry.Text,
                 Rating = ratingEntry.Text,
                 Tags = tagsEntry.Text,
+                Description = descripEntry.Text,
 
             });
             await Navigation.PopAsync(); 
@@ -84,6 +86,7 @@ namespace projDevMain
             _game.Price = priceEntry.Text;
             _game.Rating = ratingEntry.Text;
             _game.Tags = tagsEntry.Text;
+            _game.Description = descripEntry.Text;
 
             await App.Service.updateGame(_game);
             await Navigation.PopAsync();

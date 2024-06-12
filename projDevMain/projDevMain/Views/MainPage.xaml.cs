@@ -24,7 +24,7 @@ namespace projDevMain
 
             Children.Add(new homePage(currentUser)
             {
-                Title = "Homes",
+                Title = "Home",
                 IconImageSource = "homeIcon.png"
             });
             Children.Add(new listPage()

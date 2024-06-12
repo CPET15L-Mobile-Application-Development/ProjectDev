@@ -25,11 +25,11 @@
                     <Label Text="Social Connections" TextColor="White" FontFamily="Gilroy-Bold" FontSize="Medium" Margin="0,10,0,5" HorizontalOptions="Center"/>
                     
                     <StackLayout Orientation="Horizontal" Spacing="20" HeightRequest="25" HorizontalOptions="CenterAndExpand">
-                        <ImageButton Source="socFB.png" BackgroundColor="Transparent"/>
-                        <ImageButton Source="socInsta.png" BackgroundColor="Transparent"/>
-                        <ImageButton Source="socX.png" BackgroundColor="Transparent"/>
-                        <ImageButton Source="socLink.png" BackgroundColor="Transparent"/>
-                        <ImageButton Source="socGit.png" BackgroundColor="Transparent"/>
+                        <ImageButton Source="socFB.png" BackgroundColor="Transparent" Clicked="fb_Clicked"/>
+                        <ImageButton Source="socInsta.png" BackgroundColor="Transparent" x:Name="socInsta" Clicked="insta_Clicked"/>
+                        <ImageButton Source="socX.png" BackgroundColor="Transparent" x:Name="socX" Clicked="x_Clicked"/>
+                        <ImageButton Source="socLink.png" BackgroundColor="Transparent" x:Name="socLink" Clicked="link_Clicked"/>
+                        <ImageButton Source="socGit.png" BackgroundColor="Transparent" x:Name="socGit" Clicked="git_Clicked"/>
                     </StackLayout>
 
                     <Button Text="Log Out" Margin="15,20,15,5" TextColor="#e24300" BackgroundColor="#212930" CornerRadius="10" BorderColor="#e24300" BorderWidth="3" Clicked="Logout_Clicked"/>

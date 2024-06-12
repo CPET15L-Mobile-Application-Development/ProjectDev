@@ -10,6 +10,7 @@ namespace projDevMain.Models
         public string Image { get; set; }
         public string Price { get; set; }
         public string Rating { get; set; }
+        public string Description { get; set; }
         public string Tags { get; set; } // Tags stored as comma-separated values
     }
 }

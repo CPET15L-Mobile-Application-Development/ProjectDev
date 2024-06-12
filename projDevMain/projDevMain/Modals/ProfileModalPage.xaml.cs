@@ -1,6 +1,7 @@
 ﻿using projDevMain.Models;
 using projDevMain.Services;
 using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -44,6 +45,80 @@ namespace projDevMain.Modals
 
             // Navigate to the login page
             Application.Current.MainPage = new NavigationPage(new loginPage());
+        }
+
+        private async void fb_Clicked(object sender, EventArgs e)
+        {
+            string facebookUrl = currentUser.Facebook;
+            string facebookAppUriScheme = "fb://facewebmodal/f?href=" + Uri.EscapeDataString(facebookUrl);
+
+            bool canOpenWithApp = await Launcher.TryOpenAsync(facebookAppUriScheme);
+
+            
+            if (string.IsNullOrEmpty(facebookUrl))
+            {
+                await DisplayAlert("ERROR", "Invalid URL!", "OK");
+            } else 
+            {
+                await Browser.OpenAsync(facebookUrl);
+            }
+        }
+
+        //GOTO INSTAGRAM USING USER INSTA
+        private async void insta_Clicked(object sender, EventArgs e)
+        {
+            string url = currentUser.Instagram;
+
+            if (string.IsNullOrEmpty(url))
+            {
+                await DisplayAlert("ERROR", "Invalid URL!", "OK");
+            }
+            else
+            {
+                await Browser.OpenAsync(url);
+            }
+        }
+        //GOTO TWITTER USING USER TWITTER
+        private async void x_Clicked(object sender, EventArgs e)
+        {
+            string url = currentUser.Twitter;
+
+            if (string.IsNullOrEmpty(url))
+            {
+                await DisplayAlert("ERROR", "Invalid URL!", "OK");
+            }
+            else
+            {
+                await Browser.OpenAsync(url);
+            }
+        }
+        //GOTO LINKEDIN USING USER LINKEDIN
+        private async void link_Clicked(object sender, EventArgs e)
+        {
+            string url = currentUser.LinkedIn;
+
+            if (string.IsNullOrEmpty(url))
+            {
+                await DisplayAlert("ERROR", "Invalid URL!", "OK");
+            }
+            else
+            {
+                await Browser.OpenAsync(url);
+            }
+        }
+        //GOTO GITHUB USING USER GITHUB
+        private async void git_Clicked(object sender, EventArgs e)
+        {
+            string url = currentUser.GitHub;
+
+            if (string.IsNullOrEmpty(url))
+            {
+                await DisplayAlert("ERROR", "Invalid URL!", "OK");
+            }
+            else
+            {
+                await Browser.OpenAsync(url);
+            }
         }
     }
 }

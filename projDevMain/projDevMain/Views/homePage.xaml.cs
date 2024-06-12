@@ -16,6 +16,7 @@ namespace projDevMain
 	public partial class homePage : ContentPage
 	{
         private User currentUser;
+        
        // ObservableCollection<GameListModel> gamelist;
         public homePage (User user)
 		{
@@ -223,6 +224,9 @@ namespace projDevMain
             gameDataView.ItemsSource = filteredgames;
         }
 
-
+        private async void descpGame_Clicked(object sender, EventArgs e)
+        {
+             await Navigation.PushAsync(new GameDescripModalPage());
+        }
     }
 }
