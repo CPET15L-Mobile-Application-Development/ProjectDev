@@ -24,5 +24,12 @@ namespace projDevMain.Models
         public string Instagram { get; set; }
         public string LinkedIn { get; set; }
         public string GitHub { get; set; }
+
+        public string Image1 { get; set; }      //FOR STORING IMAGES
+        public string Image2 { get; set; }
+        public string Image3 { get; set; }
+        public string Image4 { get; set; }
+        public string Image5 { get; set; }
+        public string Image6 { get; set; }
     }
 }

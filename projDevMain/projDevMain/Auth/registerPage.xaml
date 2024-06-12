@@ -8,21 +8,21 @@
         <local:RegisterPageViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Content>
-        
         <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
             <!--REGISTER PART-->
             <Label Text="Register" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
-            <Label Text="{Binding CanSignUp}" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
+
             <StackLayout Spacing="15" HorizontalOptions="CenterAndExpand">
-                <Entry TextColor="White" Text="{Binding Username}" Placeholder="Username" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
-                <Entry TextColor="White" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15" TextChanged="Entry_TextChanged"></Entry>
-                <Entry TextColor="White" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15" TextChanged="Entry_TextChanged"></Entry>
-                
+                <Entry TextColor="White" Text="{Binding Username}" Placeholder="Username" PlaceholderColor="#adb8bd" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"/>
+                <Entry TextColor="White" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"/>
+                <Label Text="{Binding PasswordValidationMessage}" TextColor="Red" FontSize="15" HorizontalTextAlignment="Center"/>
+                <Entry TextColor="White" Text="{Binding ConfirmPassword}" Placeholder="Confirm Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"/>
+                <Label Text="{Binding ConfirmPasswordValidationMessage}" TextColor="Red" FontSize="15" HorizontalTextAlignment="Center"/>
+
                 <!--TERMS AND CONDITION MODAL-->
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-                    <CheckBox Color="#adb8bd" VerticalOptions="Center"/>
-                    
-                    <Label TextColor="#fcfcfc" VerticalOptions="Center" FontFamily="Gilroy-Regular">
+                    <CheckBox Color="#adb8bd" IsChecked="{Binding IsTermsAccepted}" VerticalOptions="Center"/>
+                    <Label TextColor="#fcfcfc" VerticalOptions="Center">
                         <Label.FormattedText>
                             <FormattedString>
                                 <Span Text="I read and agree to "/>
@@ -30,18 +30,14 @@
                             </FormattedString>
                         </Label.FormattedText>
 
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="termsCondition_modal_Tapped"/>
-                        </Label.GestureRecognizers>
                     </Label>
                 </StackLayout>
-
             </StackLayout>
 
-            <Button TextColor="#fcfcfc" BackgroundColor="#5d737e" CornerRadius="5" Text="Sign Up" FontSize="15" FontFamily="Gilroy-Regular" Margin="0,20,0,20" Clicked="signUp_Clicked" IsEnabled="{Binding CanSignUp}"/>
+            <Button TextColor="#fcfcfc" BackgroundColor="#5d737e" CornerRadius="5" Text="Sign Up" FontSize="15" Margin="0,20,0,20" Clicked="signUp_Clicked" IsEnabled="{Binding CanSignUp}"/>
 
             <!--LOGIN PART-->
-            <Label HorizontalOptions="Center" FontFamily="Gilroy-Regular">
+            <Label HorizontalOptions="Center">
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Already have an account? " TextColor="Gray"/>
@@ -53,6 +49,5 @@
                 </Label.GestureRecognizers>
             </Label>
         </StackLayout>
-
     </ContentPage.Content>
 </ContentPage>

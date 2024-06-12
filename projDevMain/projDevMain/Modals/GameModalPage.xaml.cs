@@ -25,7 +25,7 @@ namespace projDevMain
             
         }
 
-        Models.GameListModel _game;
+        Models.GameListModel _game; 
 
         //INITIZALIZE DATABASE ATTRIBUTES
         public GameModalPage(Models.GameListModel game) {

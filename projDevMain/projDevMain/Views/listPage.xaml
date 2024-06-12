@@ -9,7 +9,7 @@
             <StackLayout HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="PositionProportional">
                 <!--HEADER FUNCTION FOR SEARCH-->
                 <Label Text="Manage your Games" Margin="0,10,0,0" FontSize="Medium" TextColor="White"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
-                <SearchBar TextChanged="searchbar_changed" Margin="15,5,15,5" HeightRequest="35" HorizontalOptions="FillAndExpand" Placeholder="Search games" BackgroundColor="#5d737e" PlaceholderColor="#adb8bd" TextColor="White"/>
+                <SearchBar  x:Name="search" TextChanged="searchbar_changed" Margin="15,5,15,5" HeightRequest="35" HorizontalOptions="FillAndExpand" Placeholder="Search games" BackgroundColor="#5d737e" PlaceholderColor="#adb8bd" TextColor="White"/>
 
                 <!--COLLECTION VIEW STARTS HERE-->
                 <StackLayout  BackgroundColor="#30292f">
@@ -17,7 +17,7 @@
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <!--SWIPE VIEW STARTS HERE-->
-                                <SwipeView>
+                                <SwipeView BackgroundColor="Transparent">
                                     <!--FUNCTION FOR SWIPE RIGHT ITEMS-->
                                     <SwipeView.RightItems>
                                         <SwipeItems>
@@ -33,14 +33,29 @@
                                                        Invoked="delItem_Invoked"/>
                                         </SwipeItems>
                                     </SwipeView.RightItems>
-
+                                    
                                     <!--FORMAT FOR THE LAYOU OF EACH LIST-->
-                                    <StackLayout Orientation="Horizontal" Margin="15,5,15,5">
+                                    <StackLayout Orientation="Horizontal" Margin="15,5,15,5" >
                                         <Image Source="{Binding Image}" HeightRequest="100"/>
 
                                         <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10">
-                                            <Label Text="{Binding Name}" FontFamily="Gilroy-Bold" FontSize="Medium"/>
-                                            <Label Text="{Binding Price}" FontFamily="Gilroy-Regular" FontSize="Small"/>
+                                            <Label TextColor="White" Text="{Binding Name}" FontFamily="Gilroy-Bold" FontSize="Medium"/>
+                                            <Label TextColor="White"  FontFamily="Gilroy-Regular" FontSize="Small">
+
+                                                <Label.Style>
+                                                    <Style TargetType="Label">
+                                                        <Setter Property="Text" Value="{Binding Price, StringFormat='₱ {0}'}"/>
+                                                        <Style.Triggers>
+                                                            <DataTrigger TargetType="Label" 
+                                                                Binding="{Binding Price}" 
+                                                                 Value="0">
+                                                                <Setter Property="Text" Value="FREE"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Label.Style>
+
+                                            </Label>
                                         </StackLayout>
                                     </StackLayout>
                                 </SwipeView>

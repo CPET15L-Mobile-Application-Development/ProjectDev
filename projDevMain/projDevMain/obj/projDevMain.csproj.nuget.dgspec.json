@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {}
+    "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {
+    "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
+        "projectUniqueName": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
         "projectName": "projDevMain",
-        "projectPath": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
+        "projectPath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
         "packagesPath": "C:\\Users\\Wataru\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\obj\\",
         "projectStyle": "PackageReference",

@@ -20,7 +20,7 @@
                     <Image x:Name="gameImage" HeightRequest="250" WidthRequest="162" Aspect="AspectFill" BackgroundColor="#3f4045" />
                 </Frame>
 
-                <Entry x:Name="imageEntry" Placeholder="Enter image URL" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930" Margin="35,5,35,0" HeightRequest="40"/>
+                <Entry Keyboard="Url" x:Name="imageEntry" Placeholder="Enter image URL" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930" Margin="35,5,35,0" HeightRequest="40"/>
                 <Label Text="--------------- or ---------------" TextColor="#adb8bd" FontFamily="Gilroy-Regular" HorizontalOptions="CenterAndExpand"/>
                 <Button Text="🖼️ Import Image from Phone" HorizontalOptions="CenterAndExpand" Clicked="OnImportImageClicked" BackgroundColor="#212930" TextColor="#fcfcfc" HeightRequest="40" CornerRadius="10" Margin="30,5,30,0"/>
                 
@@ -32,7 +32,7 @@
                 <!--INSERT PRICE PORTION-->
                 <!--NOTE: PRICE MUST BE EXPRESSED IN NUMBER ONLY, YOU CAN CHANGE THE KEYBOARD LAYOUT INTO NUMBERS INSTEAD OF WHOLE KEYBOARD-->
                 <Label Text="Price" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0"/>
-                <Entry x:Name="priceEntry" Placeholder="Enter price" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
+                <Entry Keyboard="Numeric" x:Name="priceEntry" Placeholder="Enter price" TextColor="White" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
                 
                 <!--INSERT RATING PORTION-->
                 <Label Text="Rating" TextColor="White" FontFamily="Gilroy-Regular" FontSize="Small" Margin="0,5,0,0"/>

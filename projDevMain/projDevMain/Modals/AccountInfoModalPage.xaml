@@ -14,8 +14,8 @@
                 <Label Text="Tip: Tap the specific image you like to change" TextColor="#adb8bd" FontSize="Micro" FontAttributes="Italic"/>
                 <!--THESE ARE IMAGE BUTTONS AND CAN BE USED TO REPLACE CURRENT IMAGES-->
                 <StackLayout Orientation="Horizontal" Spacing="15">
-                    <ImageButton BackgroundColor="Transparent" Source="JBwallpaper.png" WidthRequest="220"/>
-                    <ImageButton BackgroundColor="Transparent" Source="JBprofile.png" WidthRequest="80" HorizontalOptions="EndAndExpand"/>
+                    <ImageButton x:Name="wall" BackgroundColor="Transparent" Source="JBwallpaper.png" WidthRequest="220" Clicked="wall_Clicked"/>
+                    <ImageButton x:Name="dp" BackgroundColor="Transparent" Source="user.png" WidthRequest="80" HorizontalOptions="EndAndExpand" Clicked="dp_Clicked"/>
                 </StackLayout>
                 
                 <!--MODIFY PERSONAL INFORMATION-->
@@ -29,19 +29,19 @@
                     
                     <!--FIRST NAME EDIT-->
                     <Label Grid.Column="0" Grid.Row="0" Text="First Name: " TextColor="White" FontFamily="Gilroy-Regular" FontSize="Caption" Margin="0,5,0,0" VerticalOptions="Center"/>
-                    <Entry Grid.Column="1" Grid.Row="0" Text="Joey Boy" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="1" Grid.Row="0" x:Name="firstName_Entry" Keyboard="Text" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
                     
                     <!--MIDDLE NAME EDIT-->
                     <Label Grid.Column="0" Grid.Row="1" Text="Middle Name: " TextColor="White" FontFamily="Gilroy-Regular" FontSize="Caption" Margin="0,5,0,0" VerticalOptions="Center"/>
-                    <Entry Grid.Column="1" Grid.Row="1" Text="Espadilla" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="1" Grid.Row="1" x:Name="middleName_Entry" Keyboard="Text" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
                     
                     <!--LAST NAME EDIT-->
                     <Label Grid.Column="0" Grid.Row="2" Text="Last Name: " TextColor="White" FontFamily="Gilroy-Regular" FontSize="Caption" Margin="0,5,0,0" VerticalOptions="Center"/>
-                    <Entry Grid.Column="1" Grid.Row="2" Text="Mission" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="1" Grid.Row="2" x:Name="lastName_Entry" Keyboard="Text" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
 
                     <!--AGE EDIT-->
-                    <Label Grid.Column="0" Grid.Row="3" Text="Birthdate: " TextColor="White" FontFamily="Gilroy-Regular" FontSize="Caption" Margin="0,5,0,0" VerticalOptions="Center"/>
-                    <DatePicker Grid.Column="1" Grid.Row="3" TextColor="White" FontSize="Small" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
+                    <Label Grid.Column="0" Grid.Row="3" Text="Age: " TextColor="White" FontFamily="Gilroy-Regular" FontSize="Caption" Margin="0,5,0,0" VerticalOptions="Center"/>
+                    <Entry Grid.Column="1" Grid.Row="3" x:Name="age_Entry" Keyboard="Numeric" TextColor="White" FontSize="Small" FontFamily="Gilroy-Regular" BackgroundColor="#212930"/>
                 </Grid>
 
                 <!--MODIFY CONTACT INFORMATION-->
@@ -54,11 +54,11 @@
                     
                     <!--MOBILE NUMBER EDIT-->
                     <Label Grid.Column="0" Grid.Row="0" Text="Mobile Number: " TextColor="White" FontFamily="Gilroy-Regular" FontSize="Caption" Margin="0,5,0,0" VerticalOptions="Center"/>
-                    <Entry Grid.Column="1" Grid.Row="0" Text="09764204747" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="1" Grid.Row="0" x:Name="num_Entry" Keyboard="Telephone" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
                     
                     <!--EMAIL ADDRESS EDIT-->
                     <Label Grid.Column="0" Grid.Row="1" Text="Email Address: " TextColor="White" FontFamily="Gilroy-Regular" FontSize="Caption" Margin="0,5,0,0" VerticalOptions="Center"/>
-                    <Entry Grid.Column="1" Grid.Row="1" Text="joeyboy.mission@tup.edu.ph" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="1" Grid.Row="1" x:Name="email_Entry" Keyboard="Email" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
                 </Grid>
                 
                 <!--MODIFY SOCIAL MEDIA INFORMATION-->
@@ -73,29 +73,30 @@
                     <!--FACEBOOK EDIT-->
                     <Image Grid.Column="0" Grid.Row="0" Source="socFB.png" HeightRequest="20"/>
                     <Label Grid.Column='1' Grid.Row="0" Text="Facebook:" TextColor="White" VerticalTextAlignment="Center"/>
-                    <Entry Grid.Column="2" Grid.Row="0" Text="joeyboy.mission" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="2" Grid.Row="0" x:Name="facebook_Entry" Keyboard="Url" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
 
                     <!--INSTAGRAM EDIT-->
                     <Image Grid.Column="0" Grid.Row="1" Source="socInsta.png" HeightRequest="20"/>
                     <Label Grid.Column='1' Grid.Row="1" Text="Instagram:" TextColor="White" VerticalTextAlignment="Center"/>
-                    <Entry Grid.Column="2" Grid.Row="1" Text="jb_mssn" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="2" Grid.Row="1" x:Name="insta_Entry" Keyboard="Url" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
 
                     <!--X EDIT-->
                     <Image Grid.Column="0" Grid.Row="2" Source="socX.png" HeightRequest="20"/>
                     <Label Grid.Column='1' Grid.Row="2" Text="X(Twitter):" TextColor="White" VerticalTextAlignment="Center"/>
-                    <Entry Grid.Column="2" Grid.Row="2" Text="jb_mssn" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="2" Grid.Row="2" x:Name="x_Entry" Keyboard="Url" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
 
                     <!--LINKED EDIT-->
                     <Image Grid.Column="0" Grid.Row="3" Source="socLink.png" HeightRequest="20"/>
                     <Label Grid.Column='1' Grid.Row="3" Text="LinkedIn:" TextColor="White" VerticalTextAlignment="Center"/>
-                    <Entry Grid.Column="2" Grid.Row="3" Text="www.linkedin.com/in/joey-boy-m-206474128" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="2" Grid.Row="3" x:Name="lI_Entry" Keyboard="Url" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
 
                     <!--GITHUB EDIT-->
                     <Image Grid.Column="0" Grid.Row="4" Source="socGit.png" HeightRequest="20"/>
                     <Label Grid.Column='1' Grid.Row="4" Text="GitHub:" TextColor="White" VerticalTextAlignment="Center"/>
-                    <Entry Grid.Column="2" Grid.Row="4" Text="joeyboymission" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
+                    <Entry Grid.Column="2" Grid.Row="4" x:Name="github_Entry" Keyboard="Url" BackgroundColor="#212930" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" WidthRequest="250" HorizontalOptions="StartAndExpand"/>
 
                 </Grid>
+                <Button Text="Save" Clicked="OnSaveClicked" FontFamily="Gilroy-Bold" FontSize="Medium" BackgroundColor="#212930" TextColor="#fcfcfc" Margin="15"/>
 
             </StackLayout>
         </ScrollView>

@@ -10,7 +10,9 @@ namespace projDevMain
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class registerPage : ContentPage
     {
-        private DatabaseService _databaseService;
+        private DatabaseService _databaseService; //SETTING UP THE DATABASE FOR REGISTER PAGE
+
+        //INITIALIZE THE REGISTER PAGE
         public registerPage()
         {
             InitializeComponent();
@@ -25,19 +27,18 @@ namespace projDevMain
                 "- Contains at least one number\n" +
                 "- Contains at least one special character",
                 "OK");
-           
 
             //NAVIGATION PAGE PROPERTIES
             NavigationPage.SetHasNavigationBar(this, false);
         }
-
+        //GOTO LOGIN PAGE
         private void LoginPage_Tapped(object sender, EventArgs e)
         {
             // Replace the current page with the loginPage
             Navigation.InsertPageBefore(new loginPage(), this);
             Navigation.PopAsync();
         }
-
+        //CHECKS THE PASSWORD VERIFICATIONS
         private void Entry_TextChanged(object sender, TextChangedEventArgs e)
         {
             var entry = sender as Entry;
@@ -52,13 +53,7 @@ namespace projDevMain
                 bindingContext.ConfirmPassword = e.NewTextValue;
             }
         }
-
-        //TERMS AND CONDITION FUNCTION
-        private void termsCondition_modal_Tapped(object sender, EventArgs e)
-        {
-
-        }
-
+        //IF SUCCESSFUL SIGN UP - GOTO LOGIN PAGE
         private async void signUp_Clicked(object sender, EventArgs e)
         {
             var bindingContext = (RegisterPageViewModel)BindingContext;
@@ -78,8 +73,11 @@ namespace projDevMain
             }
             else
             {
-                await DisplayAlert("ERROR", "Please ensure all fields are filled", "OK");
+                await DisplayAlert("ERROR", "Please ensure all fields are filled correctly", "OK");
             }
         }
+
+        //TERMS AND CONDITION FUNCTION
+
     }
 }
