@@ -71,7 +71,9 @@ namespace projDevMain
         //BRIEF SUMMARY OF PROFILE IN A MODAL FUNCTION
         private async void profileModal(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProfileModalPage());
+            // Pass the current user details to the ProfileModalPage
+            var profilePage = new ProfileModalPage(currentUser);
+            await Navigation.PushModalAsync(profilePage);
         }
 
         //ADD ITEM GAME MODAL FUNCTION
