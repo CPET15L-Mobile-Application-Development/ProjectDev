@@ -15,7 +15,7 @@ namespace projDevMain.Models
         public int Age { get; set; }
         public string Email { get; set; }
         public string ContactNumber { get; set; }
-        public string JobCaption { get; set; }
+        public string BioCaption { get; set; }
         public string Wallpaper { get; set; }
         public string ProfilePicture { get; set; }
 
