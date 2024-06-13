@@ -7,11 +7,11 @@
     <ContentPage.Content >
         <StackLayout Padding="25" HorizontalOptions="Center" VerticalOptions="Center" >
             <!--FRAME FOR THE PROFILE-->
-            <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True">
+            <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True" BorderColor="White">
                 <StackLayout>
                     <Label Text="Profile Summary" TextColor="White" FontFamily="Gilroy-Bold" FontSize="Title" HorizontalOptions="Center"/>
                     <Frame BackgroundColor="Transparent" BorderColor="#adb8bd" CornerRadius="500" Padding="2" Margin="5" HorizontalOptions="Center" HeightRequest="150" WidthRequest="150">
-                        <CI:CircleImage x:Name="dp" Source="JBprofile.png" HeightRequest="150" WidthRequest="150"/>
+                        <CI:CircleImage x:Name="dp" Source="noImageProf.png" HeightRequest="150" WidthRequest="150"/>
                     </Frame>
                     <Label x:Name="userfullName" TextColor="White" FontFamily="Gilroy-Bold" FontSize="Medium" HorizontalOptions="Center"/>
                     <Label Text="Fullname" TextColor="#adb8bd" FontFamily="Gilroy-Light" FontSize="Small" HorizontalOptions="Center"/>

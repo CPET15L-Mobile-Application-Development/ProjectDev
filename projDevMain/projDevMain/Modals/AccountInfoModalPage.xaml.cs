@@ -31,11 +31,9 @@ namespace projDevMain.Modals
             age_Entry.Text += currentUser.Age;
             email_Entry.Text = currentUser.Email;
             num_Entry.Text = currentUser.ContactNumber;
-            dp.Source = currentUser.ProfilePicture;
-            wall.Source = currentUser.Wallpaper;
-           pathFilewall = currentUser.Wallpaper;
-           pathFiledp = currentUser.ProfilePicture;
-           // job_Entry.Text = currentUser.JobCaption;
+            pathFilewall = currentUser.Wallpaper;
+            pathFiledp = currentUser.ProfilePicture;
+            bio_Entry.Text = currentUser.BioCaption;
 
             facebook_Entry.Text = currentUser.Facebook;
             insta_Entry.Text = currentUser.Instagram;
@@ -51,7 +49,7 @@ namespace projDevMain.Modals
 
             currentUser.MiddleName = middleName_Entry.Text;
             currentUser.LastName = lastName_Entry.Text;
-           // currentUser.JobCaption = job_Entry.Text;
+            currentUser.BioCaption = bio_Entry.Text;
             currentUser.Age = int.Parse(age_Entry.Text);
             currentUser.Email = email_Entry.Text;
             currentUser.ContactNumber = num_Entry.Text;

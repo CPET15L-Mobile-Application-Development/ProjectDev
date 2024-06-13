@@ -20,16 +20,16 @@ namespace projDevMain.Modals
             InitializeComponent();
             //STATIC DATA FOR THE IMAGE COLLECTION FOR THE ACCOUNT
             //PLEASE CHANGE THIS BASED ON THE DATABASE SQL FOR BETTER FUNCTIONALITY IF POSSIBLE
-           imageCollection = new ObservableCollection<AccountImageModel>
-            {
-                new AccountImageModel {imgTitle = "Image 1"},
-                new AccountImageModel { imgTitle = "Image 2"},
-                new AccountImageModel { imgTitle = "Image 3"},
-                new AccountImageModel {imgTitle = "Image 4"},
-                new AccountImageModel {imgTitle = "Image 5"},
-                new AccountImageModel {imgTitle = "Image 6"},         
-            };
-            accImgDataView.ItemsSource = imageCollection; 
+           //imageCollection = new ObservableCollection<AccountImageModel>
+           // {
+           //     new AccountImageModel {imgTitle = "Image 1"},
+           //     new AccountImageModel { imgTitle = "Image 2"},
+           //     new AccountImageModel { imgTitle = "Image 3"},
+           //     new AccountImageModel {imgTitle = "Image 4"},
+           //     new AccountImageModel {imgTitle = "Image 5"},
+           //     new AccountImageModel {imgTitle = "Image 6"},         
+           // };
+           // accImgDataView.ItemsSource = imageCollection; 
         }
 	}
 }

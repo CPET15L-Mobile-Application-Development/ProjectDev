@@ -2,13 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projDevMain.Modals.ImageInfoModalPage"
-             Background="#02111b">
+             BackgroundColor="Transparent">
+    
     <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="Modify Featured Images" TextColor="White" FontSize="Title" FontFamily="Gilroy-Bold"/>
-            <Label Text="Tip: Tap the specific image slot you like to change or upload" TextColor="#adb8bd" FontSize="Micro" FontAttributes="Italic"/>
+        <StackLayout Padding="25" HorizontalOptions="Center" VerticalOptions="Center">
+            <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True">
+                <StackLayout Padding="10">
+                    <Label Text="Modify Featured Images" TextColor="White" FontSize="Title" FontFamily="Gilroy-Bold"/>
+                    <Label Text="Tip: Tap the specific image slot you like to change or upload" TextColor="#adb8bd" FontSize="Micro" FontAttributes="Italic"/>
 
-            <CollectionView x:Name="accImgDataView">
+                    <!--<CollectionView x:Name="accImgDataView">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5" VerticalItemSpacing="5" Span="2"/>
                 </CollectionView.ItemsLayout>
@@ -21,7 +24,23 @@
                         </StackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
-            </CollectionView>
+            </CollectionView>-->
+
+                    <!--CHANGE FROM COLLECTION VIEW TO GRID VIEW-->
+                    <Grid Padding="10">
+                        <ImageButton Grid.Column="0" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton Grid.Column="1" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton Grid.Column="0" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton Grid.Column="1" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton Grid.Column="0" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton Grid.Column="1" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                    </Grid>
+
+
+                </StackLayout>
+
+            </Frame>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
