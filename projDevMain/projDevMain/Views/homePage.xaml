@@ -8,23 +8,20 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="CenterAndExpand">
             <!--HEADER PROFILE GREETING-->
-            <StackLayout Orientation="Horizontal" Spacing="155" Padding="25,10,25,5" VerticalOptions="Center" BackgroundColor="#3f4045">
-                <Label  x:Name="greetingLabel" Text="" FontSize="Medium" TextColor="#adb8bd" HorizontalOptions="Start"/>
-                <!--Greets the USER-->
-                <ImageButton x:Name="dp" Source="user.png" Clicked="profileModal" HeightRequest="30" WidthRequest="30" BackgroundColor="Transparent"/>
+            <StackLayout Orientation="Horizontal" Padding="25,5,25,5" BackgroundColor="#3f4045">
+                <Label  x:Name="greetingLabel" Text="" FontSize="Medium" TextColor="#adb8bd" WidthRequest="150" HorizontalOptions="StartAndExpand"/> <!--Greets the USER-->
+                <ImageButton x:Name="dp" Source="user.png" CornerRadius="500" Clicked="profileModal" HeightRequest="30" WidthRequest="30" BackgroundColor="Transparent" HorizontalOptions="End"/>
             </StackLayout>
-
+            
             <!--SEARCH GUI SECTION-->
             <Label Text="Browse to the Game" Margin="0,10,0,0" FontSize="Medium" TextColor="White"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
             <SearchBar TextChanged="SearchBar_TextChanged" Margin="15,5,15,0" HeightRequest="35" HorizontalOptions="FillAndExpand" Placeholder="Search games" BackgroundColor="#5d737e" PlaceholderColor="#adb8bd" TextColor="White"/>
-
-           
 
             <!--SCROLLABLE TAGS-->
             <ScrollView Orientation="Horizontal">
                 <StackLayout Orientation="Horizontal" HeightRequest="35" Margin="15,5,15,5">
                     <Button Text="📃 All Games" FontSize="13" FontFamily="Gilroy-Medium" CornerRadius="15" Padding="5,0,5,0" BackgroundColor="#adb8bd" Clicked="allgames_Clicked"/>
-                    <Button Text="Paid Games" FontSize="13" FontFamily="Gilroy-Medium" CornerRadius="15" Padding="5,0,5,0" BackgroundColor="#adb8bd" Clicked="paidButton_Clicked"/>
+                    <Button Text="💵 Paid Games" FontSize="13" FontFamily="Gilroy-Medium" CornerRadius="15" Padding="5,0,5,0" BackgroundColor="#adb8bd" Clicked="paidButton_Clicked"/>
                     <Button Text="✅ Free Games" FontSize="13" FontFamily="Gilroy-Medium" CornerRadius="15" Padding="5,0,5,0" BackgroundColor="#adb8bd" Clicked="freeButton_Clicked"/>
                     <Button Text="🚀 Action" FontSize="13" FontFamily="Gilroy-Medium" CornerRadius="15" Padding="5,0,5,0" BackgroundColor="#adb8bd" Clicked="actionButton_Clicked"/>
                     <Button Text="🗺️ Adventure" FontSize="13" FontFamily="Gilroy-Medium" CornerRadius="15" Padding="5,0,5,0" BackgroundColor="#adb8bd" Clicked="advButton_Clicked"/>
@@ -35,10 +32,7 @@
                     <Button Text="🧩 Puzzle" FontSize="13" FontFamily="Gilroy-Medium" CornerRadius="15" Padding="5,0,5,0" BackgroundColor="#adb8bd" Clicked="puzzleButton_Clicked"/>
                 </StackLayout>
             </ScrollView>
-
-            <!-- Label to show "No results" message -->
-            <Label x:Name="noResultsLabel" Text="No results" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" IsVisible="False" />
-
+            
             <!--SCROLLABLE COLECTION VIEW-->
             <CollectionView x:Name="gameDataView" Margin="15,5,15,5">
                 <!--FORMATTING FOR THE GRID ITEMS LAYOUT-->
@@ -51,7 +45,7 @@
                     <DataTemplate>
                         <Frame BackgroundColor="Transparent" Padding="0" CornerRadius="0">
                             <StackLayout>
-                                <!-- <Image Source="{Binding Image}" HeightRequest="250" WidthRequest="162" Aspect="AspectFill"/>-->
+                               <!-- <Image Source="{Binding Image}" HeightRequest="250" WidthRequest="162" Aspect="AspectFill"/>-->
                                 <ImageButton Source="{Binding Image}" HeightRequest="250" WidthRequest="162" Aspect="AspectFill" Clicked="descpGame_Clicked"/>
                                 <Label Text="{Binding Name}" FontSize="Medium" FontFamily="Gilroy-Bold" TextColor="White"/>
                                 <StackLayout Orientation="Horizontal">

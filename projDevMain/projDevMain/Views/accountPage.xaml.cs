@@ -44,12 +44,12 @@ namespace projDevMain
             //PLEASE CHANGE THIS BASED ON THE DATABASE SQL FOR BETTER FUNCTIONALITY IF POSSIBLE
             imageCollection = new ObservableCollection<AccountImageModel>
             {
-                new AccountImageModel {accImage = "JBimage1.png"},
-                new AccountImageModel {accImage = "JBimage2.png"},
-                new AccountImageModel {accImage = "JBimage3.png"},
-                new AccountImageModel {accImage = "JBimage4.png"},
-                new AccountImageModel {accImage = "JBimage5.png"},
-                new AccountImageModel {accImage = "JBimage6.png"},
+                new AccountImageModel {accImage = "noImageCard.png"},
+                new AccountImageModel {accImage = "noImageCard.png"},
+                new AccountImageModel {accImage = "noImageCard.png"},
+                new AccountImageModel {accImage = "noImageCard.png"},
+                new AccountImageModel {accImage = "noImageCard.png"},
+                new AccountImageModel {accImage = "noImageCard.png"},
             };
             accImgDataView.ItemsSource = imageCollection;
         }
@@ -57,23 +57,20 @@ namespace projDevMain
         private void UpdateUserDetails(User user)
         {
             // Update user details or set placeholders
-            userFullName.Text = $"{(string.IsNullOrEmpty(user.FirstName) ? "Edit Profile" : user.FirstName)} {(string.IsNullOrEmpty(user.MiddleName) ? "" : user.MiddleName)} {(string.IsNullOrEmpty(user.LastName) ? "" : user.LastName)}".Trim();
+            userFullName.Text = $"{(string.IsNullOrEmpty(user.FirstName) ? "Edit Profile" : user.FirstName)} {(string.IsNullOrEmpty(user.LastName) ? "" : user.LastName)}".Trim();
             userFirst.Text = string.IsNullOrEmpty(user.FirstName) ? "Edit Profile" : user.FirstName;
             userMiddle.Text = string.IsNullOrEmpty(user.MiddleName) ? "Edit Profile" : user.MiddleName;
             userLast.Text = string.IsNullOrEmpty(user.LastName) ? "Edit Profile" : user.LastName;
             userAge.Text = user.Age == 0 ? "Edit Profile" : user.Age.ToString();
             userEmail.Text = string.IsNullOrEmpty(user.Email) ? "Edit Profile" : user.Email;
             userContact.Text = string.IsNullOrEmpty(user.ContactNumber) ? "Edit Profile" : user.ContactNumber;
-            //job.Text = string.IsNullOrEmpty(user.JobCaption) ? "Edit Profile" : user.JobCaption;
+            userBio.Text = string.IsNullOrEmpty(user.BioCaption) ? "Edit Profile" : user.BioCaption;
 
-            
+            if (!string.IsNullOrEmpty(user.Wallpaper) && !string.IsNullOrEmpty(user.ProfilePicture))
+            {
                 wall.Source = ImageSource.FromFile(user.Wallpaper);
                 dp.Source = ImageSource.FromFile(user.ProfilePicture);
-           
-            
-            
-
-
+            }  
         }
 
 
@@ -81,13 +78,13 @@ namespace projDevMain
         //EDIT ACCOUNT INFORMATION MODAL FUNCTION
         private async void editInfo(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AccountInfoModalPage(currentUser));
+            await Navigation.PushModalAsync(new AccountInfoModalPage(currentUser));
         }
 
         //EDIT IMAGE INFORMATION MODAL FUNCTION
         private async void editImages(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ImageInfoModalPage());
+            await Navigation.PushModalAsync(new ImageInfoModalPage());
         }
 
         //GOTO FACEBOOK USING USER FB
