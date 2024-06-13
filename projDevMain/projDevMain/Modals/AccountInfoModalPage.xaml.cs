@@ -71,6 +71,7 @@ namespace projDevMain.Modals
 
             // Navigate back to accountPage
             await Navigation.PopAsync();
+            
         }
         //IMAGE IMPORT FOR WALLPAPER
         private async void wall_Clicked(object sender, EventArgs e)

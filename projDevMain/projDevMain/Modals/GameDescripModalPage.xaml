@@ -3,9 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projDevMain.Modals.GameDescripModalPage"
              BackgroundColor="#02111b">
-    <ContentPage.Content>
-        <StackLayout>
-
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout Padding="20">
+        <Label Text="{Binding Name}" FontSize="Large" FontFamily="Gilroy-Bold" TextColor="White" />
+        <Image Source="{Binding Image}" HeightRequest="250" WidthRequest="162" Aspect="AspectFill" />
+        <Label Text="{Binding Price}" FontSize="Medium" FontFamily="Gilroy-Bold" TextColor="White" />
+        <Label Text="{Binding Rating}" FontSize="Medium" FontFamily="Gilroy-Regular" TextColor="White" />
+        <Label Text="{Binding Tags}" FontSize="Medium" FontFamily="Gilroy-Regular" TextColor="White" />
+        <Label Text="{Binding Description}" FontSize="Medium" FontFamily="Gilroy-Regular" TextColor="White" />
+    </StackLayout>
 </ContentPage>

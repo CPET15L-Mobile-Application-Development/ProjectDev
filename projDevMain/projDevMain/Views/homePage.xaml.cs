@@ -226,7 +226,12 @@ namespace projDevMain
 
         private async void descpGame_Clicked(object sender, EventArgs e)
         {
-             await Navigation.PushAsync(new GameDescripModalPage());
+            var button = sender as ImageButton;
+            var selectedGame = button.BindingContext as GameListModel;
+            if (selectedGame != null)
+            {
+                await Navigation.PushModalAsync(new GameDescripModalPage(selectedGame));
+            }
         }
     }
 }

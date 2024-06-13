@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projDevMain.Modals.ProfileModalPage"
              xmlns:CI="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
-             BackgroundColor="#02111b">
-    <ContentPage.Content>
-        <StackLayout Padding="25" HorizontalOptions="Center" VerticalOptions="Center">
+             BackgroundColor="Transparent" >
+    <ContentPage.Content >
+        <StackLayout Padding="25" HorizontalOptions="Center" VerticalOptions="Center" >
             <!--FRAME FOR THE PROFILE-->
             <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True">
                 <StackLayout>
