@@ -117,7 +117,9 @@ namespace projDevMain
 
             var searchTerm = e.NewTextValue?.ToLower();
             var filteredGames = games.Where(p => p.Name.ToLower().Contains(searchTerm)).ToList();
+
             gameDataView.ItemsSource = filteredGames;
+            noResultsLabel.IsVisible = !filteredGames.Any();
         }
 
 

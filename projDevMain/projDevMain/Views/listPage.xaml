@@ -11,6 +11,10 @@
                 <Label Text="Manage your Games" Margin="0,10,0,0" FontSize="Medium" TextColor="White"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
                 <SearchBar  x:Name="search" TextChanged="searchbar_changed" Margin="15,5,15,5" HeightRequest="35" HorizontalOptions="FillAndExpand" Placeholder="Search games" BackgroundColor="#5d737e" PlaceholderColor="#adb8bd" TextColor="White"/>
 
+                <!-- Label to show "No results" message -->
+                <Label x:Name="noResultsLabel" Text="No results" FontSize="Medium" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" IsVisible="False" />
+
+
                 <!--COLLECTION VIEW STARTS HERE-->
                 <StackLayout  BackgroundColor="#30292f">
                     <CollectionView x:Name="gameDataView">

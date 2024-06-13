@@ -66,11 +66,10 @@ namespace projDevMain
             userContact.Text = string.IsNullOrEmpty(user.ContactNumber) ? "Edit Profile" : user.ContactNumber;
             //job.Text = string.IsNullOrEmpty(user.JobCaption) ? "Edit Profile" : user.JobCaption;
 
-            if (!string.IsNullOrEmpty(user.Wallpaper) && !string.IsNullOrEmpty(user.ProfilePicture))
-            {
+            
                 wall.Source = ImageSource.FromFile(user.Wallpaper);
                 dp.Source = ImageSource.FromFile(user.ProfilePicture);
-            }  
+           
             
             
 

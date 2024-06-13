@@ -31,8 +31,10 @@ namespace projDevMain.Modals
             age_Entry.Text += currentUser.Age;
             email_Entry.Text = currentUser.Email;
             num_Entry.Text = currentUser.ContactNumber;
-            pathFilewall = currentUser.Wallpaper;
-            pathFiledp = currentUser.ProfilePicture;
+            dp.Source = currentUser.ProfilePicture;
+            wall.Source = currentUser.Wallpaper;
+           pathFilewall = currentUser.Wallpaper;
+           pathFiledp = currentUser.ProfilePicture;
            // job_Entry.Text = currentUser.JobCaption;
 
             facebook_Entry.Text = currentUser.Facebook;
