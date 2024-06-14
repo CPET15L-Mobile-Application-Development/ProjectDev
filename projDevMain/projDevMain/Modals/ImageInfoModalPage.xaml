@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projDevMain.Modals.ImageInfoModalPage"
              BackgroundColor="Transparent">
-    
+
     <ContentPage.Content>
         <StackLayout Padding="25" HorizontalOptions="Center" VerticalOptions="Center">
             <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True">
@@ -28,15 +28,15 @@
 
                     <!--CHANGE FROM COLLECTION VIEW TO GRID VIEW-->
                     <Grid Padding="10">
-                        <ImageButton Grid.Column="0" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton Grid.Column="1" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton Grid.Column="0" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton Grid.Column="1" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton Grid.Column="0" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton Grid.Column="1" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton x:Name="image1" Clicked="image1_Clicked" Grid.Column="0" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton x:Name="image2" Clicked="image2_Clicked" Grid.Column="1" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton x:Name="image3" Clicked="image3_Clicked" Grid.Column="0" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton x:Name="image4" Clicked="image4_Clicked" Grid.Column="1" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton x:Name="image5" Clicked="image5_Clicked" Grid.Column="0" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
+                        <ImageButton x:Name="image6" Clicked="image6_Clicked" Grid.Column="1" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
                     </Grid>
 
-
+                    <Button Text="Save" Clicked="OnSaveClicked" CornerRadius="10" FontFamily="Gilroy-Bold" FontSize="Medium" BackgroundColor="#5d737e" TextColor="#fcfcfc" Margin="15"/>
                 </StackLayout>
 
             </Frame>

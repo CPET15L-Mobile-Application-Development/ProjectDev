@@ -2083,3 +2083,7 @@ C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debu
 C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debug\130\res\drawable\jbimage4.png
 C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debug\130\res\drawable\jbimage5.png
 C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debug\130\res\drawable\jbimage6.png
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debug\130\res\drawable\noimagebox.png
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debug\130\res\drawable\noimagecard.png
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debug\130\res\drawable\noimageprof.png
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain.Android\obj\Debug\130\res\drawable\noimagewall.png

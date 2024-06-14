@@ -3730,11 +3730,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
       "projectName": "projDevMain.Android",
-      "projectPath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
+      "projectPath": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
       "packagesPath": "C:\\Users\\Wataru\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain.Android\\obj\\",
+      "outputPath": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3755,8 +3755,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {
-              "projectPath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj"
+            "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj": {
+              "projectPath": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj"
             }
           }
         }

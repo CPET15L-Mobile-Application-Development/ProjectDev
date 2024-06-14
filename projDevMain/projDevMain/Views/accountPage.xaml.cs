@@ -18,11 +18,8 @@ namespace projDevMain
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class accountPage : ContentPage
     {
-        private User currentUser;   //INITIALIZE CURRENT USER INFOS
+        private User currentUser;
 
-        ObservableCollection<AccountImageModel> imageCollection;
-
-       //INTIALIZE ACCOUNT PAGE
         public accountPage(User user)
         {
             InitializeComponent();
@@ -31,32 +28,26 @@ namespace projDevMain
             // Display initial user details with placeholders
             UpdateUserDetails(currentUser);
 
-            // Subscribe to the message
+            // Subscribe to the message for profile update
             MessagingCenter.Subscribe<AccountInfoModalPage, User>(this, "ProfileUpdated", (sender, updatedUser) =>
             {
-                // Update the user details when the profile is updated
                 currentUser = updatedUser;
                 UpdateUserDetails(currentUser);
             });
 
-
-            //STATIC DATA FOR THE IMAGE COLLECTION FOR THE ACCOUNT
-            //PLEASE CHANGE THIS BASED ON THE DATABASE SQL FOR BETTER FUNCTIONALITY IF POSSIBLE
-            imageCollection = new ObservableCollection<AccountImageModel>
+            // Subscribe to the message for image update
+            MessagingCenter.Subscribe<ImageInfoModalPage, User>(this, "ImagesUpdated", (sender, updatedUser) =>
             {
-                new AccountImageModel {accImage = "noImageCard.png"},
-                new AccountImageModel {accImage = "noImageCard.png"},
-                new AccountImageModel {accImage = "noImageCard.png"},
-                new AccountImageModel {accImage = "noImageCard.png"},
-                new AccountImageModel {accImage = "noImageCard.png"},
-                new AccountImageModel {accImage = "noImageCard.png"},
-            };
-            accImgDataView.ItemsSource = imageCollection;
+                currentUser = updatedUser;
+                UpdateUserImages(currentUser);
+            });
+
+            // Initial call to set images
+            UpdateUserImages(currentUser);
         }
-        //UPDATES USERS INFO UPON UPDATING IN MODAL
+
         private void UpdateUserDetails(User user)
         {
-            // Update user details or set placeholders
             userFullName.Text = $"{(string.IsNullOrEmpty(user.FirstName) ? "Edit Profile" : user.FirstName)} {(string.IsNullOrEmpty(user.LastName) ? "" : user.LastName)}".Trim();
             userFirst.Text = string.IsNullOrEmpty(user.FirstName) ? "Edit Profile" : user.FirstName;
             userMiddle.Text = string.IsNullOrEmpty(user.MiddleName) ? "Edit Profile" : user.MiddleName;
@@ -65,12 +56,21 @@ namespace projDevMain
             userEmail.Text = string.IsNullOrEmpty(user.Email) ? "Edit Profile" : user.Email;
             userContact.Text = string.IsNullOrEmpty(user.ContactNumber) ? "Edit Profile" : user.ContactNumber;
             userBio.Text = string.IsNullOrEmpty(user.BioCaption) ? "Edit Profile" : user.BioCaption;
+            dp.Source = string.IsNullOrEmpty(user.ProfilePicture) ? "noImageProf.png" : user.ProfilePicture;
+            wall.Source = string.IsNullOrEmpty(user.Wallpaper) ? "noImageWall.png" : user.Wallpaper;
 
-            if (!string.IsNullOrEmpty(user.Wallpaper) && !string.IsNullOrEmpty(user.ProfilePicture))
-            {
-                wall.Source = ImageSource.FromFile(user.Wallpaper);
-                dp.Source = ImageSource.FromFile(user.ProfilePicture);
-            }  
+            // Notify homePage about the profile update
+            MessagingCenter.Send(this, "ProfileUpdated", user);
+        }
+
+        private void UpdateUserImages(User user)
+        {
+            image1.Source = string.IsNullOrEmpty(user.Image1) ? "noImageCard.png" : user.Image1;
+            image2.Source = string.IsNullOrEmpty(user.Image2) ? "noImageCard.png" : user.Image2;
+            image3.Source = string.IsNullOrEmpty(user.Image3) ? "noImageCard.png" : user.Image3;
+            image4.Source = string.IsNullOrEmpty(user.Image4) ? "noImageCard.png" : user.Image4;
+            image5.Source = string.IsNullOrEmpty(user.Image5) ? "noImageCard.png" : user.Image5;
+            image6.Source = string.IsNullOrEmpty(user.Image6) ? "noImageCard.png" : user.Image6;
         }
 
 
@@ -84,7 +84,7 @@ namespace projDevMain
         //EDIT IMAGE INFORMATION MODAL FUNCTION
         private async void editImages(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new ImageInfoModalPage());
+            await Navigation.PushModalAsync(new ImageInfoModalPage(currentUser));
         }
 
         //GOTO FACEBOOK USING USER FB

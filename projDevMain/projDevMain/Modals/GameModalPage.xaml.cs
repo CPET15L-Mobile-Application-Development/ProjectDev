@@ -5,56 +5,28 @@ using projDevMain.Services;
 using System;
 using Xamarin.Essentials;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
 
 namespace projDevMain
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GameModalPage : ContentPage
     {
-
         private GameListModel game;
         private bool _isEdit;
         private DatabaseService _databaseService;
 
-
-        //TAG FUNCTIONS PORTIONS
-        //private ObservableCollection<string> _tags;
-        //public ObservableCollection<string> Tags
-        //{
-        //    get => _tags;
-        //    set
-        //    {
-        //        _tags = value;
-        //        OnPropertyChanged(nameof(Tags));
-        //    }
-        //}
-        //public ObservableCollection<string> SelectedTags { get; set; } = new ObservableCollection<string>();
-
-
-        //MAIN GAMEMODAL PAGE INITIALIZE COMPONENTS
         public GameModalPage()
         {
             InitializeComponent();
             _databaseService = new DatabaseService();
-
-            //INITIALIZE THE TAGS
-            //BindingContext = this;
-
-            //Tags = new ObservableCollection<string>
-            //{
-            //    "Paid Games","Free Games","Action", "Adventure", "Role Playing", "Simulation", "Strategy", "Sports","Puzzle" //ADD MORE TAGS IF NEEDED
-            //};
-
         }
 
-        Models.GameListModel _game; 
+        Models.GameListModel _game;
 
-        //INITIZALIZE DATABASE ATTRIBUTES
-        public GameModalPage(Models.GameListModel game) {
-
+        public GameModalPage(Models.GameListModel game)
+        {
             InitializeComponent();
             _isEdit = true;
             Title = "Edit Game Information";
@@ -64,22 +36,32 @@ namespace projDevMain
             priceEntry.Text = _game.Price;
             ratingEntry.Text = _game.Rating;
             descripEntry.Text = _game.Description;
-            tagsEntry.Text = _game.Tags;
+            SetTags(_game.Tags);
             nameEntry.Focus();
-
         }
 
-       async void OnSaveClicked(object sender, EventArgs e)
+        private void SetTags(string tags)
         {
-                //CHECKS FIELDS IF FILLED
-            if (string.IsNullOrWhiteSpace(nameEntry.Text) || 
+            var tagList = tags.Split(new[] { "+", "," }, StringSplitOptions.RemoveEmptyEntries).Select(tag => tag.Trim()).ToList();
+            tagAction.IsChecked = tagList.Contains("Action");
+            tagAdventure.IsChecked = tagList.Contains("Adventure");
+            tagRPG.IsChecked = tagList.Contains("Role-playing");
+            tagSimulation.IsChecked = tagList.Contains("Simulation");
+            tagStrategy.IsChecked = tagList.Contains("Strategy");
+            tagSports.IsChecked = tagList.Contains("Sports");
+            tagPuzzle.IsChecked = tagList.Contains("Puzzle");
+        }
+
+        async void OnSaveClicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(nameEntry.Text) ||
                 string.IsNullOrWhiteSpace(priceEntry.Text) ||
                 string.IsNullOrWhiteSpace(imageEntry.Text) ||
-                string.IsNullOrWhiteSpace(ratingEntry.Text)|| 
-                string.IsNullOrWhiteSpace(tagsEntry.Text))
-            { 
-                await DisplayAlert("Invalid","Blank or Whitespace is Invalid!","OK");
-            } else if (_game != null)
+                string.IsNullOrWhiteSpace(ratingEntry.Text))
+            {
+                await DisplayAlert("Invalid", "Blank or Whitespace is Invalid!", "OK");
+            }
+            else if (_game != null)
             {
                 updateGame();
             }
@@ -88,7 +70,23 @@ namespace projDevMain
                 addGame();
             }
         }
-        //ADD GAME DETAILS TO DATABASE
+
+        private string GetSelectedTags()
+        {
+            var selectedTags = new[]
+            {
+                tagAction.IsChecked ? "Action" : null,
+                tagAdventure.IsChecked ? "Adventure" : null,
+                tagRPG.IsChecked ? "Role-playing" : null,
+                tagSimulation.IsChecked ? "Simulation" : null,
+                tagStrategy.IsChecked ? "Strategy" : null,
+                tagSports.IsChecked ? "Sports" : null,
+                tagPuzzle.IsChecked ? "Puzzle" : null
+            }.Where(tag => tag != null);
+
+            return string.Join("+", selectedTags);
+        }
+
         async void addGame()
         {
             await App.Service.addGame(new Models.GameListModel()
@@ -97,27 +95,25 @@ namespace projDevMain
                 Image = imageEntry.Text,
                 Price = priceEntry.Text,
                 Rating = ratingEntry.Text,
-                Tags = tagsEntry.Text,
+                Tags = GetSelectedTags(),
                 Description = descripEntry.Text,
-
             });
-            await Navigation.PopAsync(); 
+            await Navigation.PopAsync();
         }
-        //UPDATE GAME DETAILS IN DATABASE
+
         async void updateGame()
         {
             _game.Name = nameEntry.Text;
             _game.Image = imageEntry.Text;
             _game.Price = priceEntry.Text;
             _game.Rating = ratingEntry.Text;
-            _game.Tags = tagsEntry.Text; //MUST BE UPDATED AND CHANGED
+            _game.Tags = GetSelectedTags();
             _game.Description = descripEntry.Text;
 
             await App.Service.updateGame(_game);
             await Navigation.PopAsync();
         }
 
-        //IMAGE IMPORT BUTTON LOCALLY OR URL
         async void OnImportImageClicked(object sender, EventArgs e)
         {
             try
@@ -134,8 +130,9 @@ namespace projDevMain
                     imageEntry.Text = filePath;
                     gameImage.Source = ImageSource.FromFile(filePath);
                 }
-            } catch (Exception ex){
-
+            }
+            catch (Exception ex)
+            {
                 await DisplayAlert("Error", $"Failed to import image: {ex.Message}", "OK");
             }
         }
@@ -152,7 +149,7 @@ namespace projDevMain
             }
             return imageUrl;
         }
-        //SAVE IMAGE LOCALLY FOR FASTER RETRVIEVE
+
         private async Task<string> SaveFileToLocalStorage(string fileName, Stream fileStream)
         {
             var filePath = Path.Combine(FileSystem.AppDataDirectory, fileName);
@@ -162,26 +159,5 @@ namespace projDevMain
             }
             return filePath;
         }
-
-        //TAGS CHECKLIST FUNCTION DEFINES
-        //public event PropertyChangedEventHandler PropertyChanged;
-
-        //protected virtual void OnPropertyChanged(string propertyName)
-        //{
-        //    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        //}
-
-        //private void OnTagSelected(object sender, SelectedItemChangedEventArgs e)
-        //{
-        //    var tag = e.SelectedItem as string;
-        //    if (tag != null && !SelectedTags.Contains(tag))
-        //    {
-        //        SelectedTags.Add(tag);
-        //    }
-        //    else if (tag != null && SelectedTags.Contains(tag))
-        //    {
-        //        SelectedTags.Remove(tag);
-        //    }
-        //}
     }
 }

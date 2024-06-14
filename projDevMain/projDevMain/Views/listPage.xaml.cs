@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using projDevMain.Models;
@@ -96,7 +97,9 @@ namespace projDevMain
 
             var searchTerm = e.NewTextValue?.ToLower();
             var filteredGames = allGames.Where(p => p.Name.ToLower().Contains(searchTerm)).ToList();
+
             gameDataView.ItemsSource = filteredGames;
+            noResultsLabel.IsVisible = !filteredGames.Any();
         }
     }
 }

@@ -16,49 +16,37 @@ namespace projDevMain
 	public partial class homePage : ContentPage
 	{
         private User currentUser;
-        
-       // ObservableCollection<GameListModel> gamelist;
-        public homePage (User user)
-		{
+
+        // ObservableCollection<GameListModel> gamelist;
+        public homePage(User user)
+        {
             InitializeComponent();
             currentUser = user;
-            var greetingLabel = this.FindByName<Label>("greetingLabel");
+
+            // Set the greeting label and profile picture
             greetingLabel.Text = $"Welcome, {user.Username}!";
+            dp.Source = string.IsNullOrEmpty(user.ProfilePicture) ? "user.png" : ImageSource.FromFile(user.ProfilePicture);
 
-            if ( !string.IsNullOrEmpty(user.ProfilePicture))
+            // Subscribe to the message for profile update
+            MessagingCenter.Subscribe<accountPage, User>(this, "ProfileUpdated", (sender, updatedUser) =>
             {
-                
-                dp.Source = ImageSource.FromFile(user.ProfilePicture);
-            }
+                currentUser = updatedUser;
+                UpdateUserProfile(currentUser);
+            });
 
-
-            /*
-                //STATIC POPULATE DATA
-                //NOTE: BETTER IF THERE IS AN IMPLEMENTATION OF SQL
-                gamelist = new ObservableCollection<GameListModel>
-                {
-                    //new GameListModel{Name = "", Image = "", Rating = ""}, POPULATE TEMPLATE
-                    //FOR BETTER RESULTS TRY TO CONNECT TO THE SQL DATABASE
-                    //PASS FROM SQL CONVERT THEN IMPORT TO THE NAME="" AND IMAGE=""
-
-                    new GameListModel{Name = "Elden Ring", Image = "gameER.png", Rating = "8.8/10", Price="₱2,399.00"},
-                    new GameListModel{Name = "Grand Theft Auto", Image = "gameGTA.png", Rating = "8.8/10", Price="₱655.18"},
-                    new GameListModel{Name = "The Witcher - Wild Hunt", Image = "gameTW.png", Rating = "9.3/10", Price="₱1,699.00"},
-                    new GameListModel{Name = "Red Dead Redemption", Image = "gameRDR.png", Rating = "8.9/10", Price = "₱920.00"},
-                    new GameListModel{Name = "Minecraft", Image = "gameMC.png", Rating = "8.3/10" , Price = "₱925.00"},
-                    new GameListModel{Name = "League of Legends", Image = "gameLOL.png", Rating = "7.5/10" , Price = "Free"},
-                    new GameListModel{Name = "Fortnite", Image = "gameFN.png", Rating = "7.4/10" , Price = "Free"},
-                    new GameListModel{Name = "Call of Duty", Image = "gameCOD.png", Rating = "7.8/10" , Price = "Free"},
-                    new GameListModel{Name = "The Sims 4", Image = "gameS4.png", Rating = "7.2/10" , Price = "Free"},
-                    new GameListModel{Name = "Apex Legends", Image = "gameAL.png", Rating = "8.5/10" , Price = "Free"},
-                    new GameListModel{Name = "God of War", Image = "gameGOW.png", Rating = "8.7/10" , Price = "₱2,490.00"},
-                    new GameListModel{Name = "Stardew Valley", Image = "gameSDV.png", Rating = "9.0/10" , Price = "₱419.95"},
-                    new GameListModel{Name = "Hades", Image = "gameHD.png", Rating = "7.5/10" , Price = "₱765.00"},
-                };
-
-                //PASS THE DATA FROM THE DEFINED "gamelist" TO THE x:Name="gameCollectionView"
-                gameDataView.ItemsSource = gamelist;*/
+            // Subscribe to the message for image update
+            MessagingCenter.Subscribe<ImageInfoModalPage, User>(this, "ProfileUpdated", (sender, updatedUser) =>
+            {
+                currentUser = updatedUser;
+                UpdateUserProfile(currentUser);
+            });
         }
+
+        private void UpdateUserProfile(User user)
+        {
+            dp.Source = string.IsNullOrEmpty(user.ProfilePicture) ? "user.png" : ImageSource.FromFile(user.ProfilePicture);
+        }
+
         protected override async void OnAppearing()
         {
             try
@@ -117,7 +105,9 @@ namespace projDevMain
 
             var searchTerm = e.NewTextValue?.ToLower();
             var filteredGames = games.Where(p => p.Name.ToLower().Contains(searchTerm)).ToList();
+
             gameDataView.ItemsSource = filteredGames;
+            noResultsLabel.IsVisible = !filteredGames.Any();
         }
 
 

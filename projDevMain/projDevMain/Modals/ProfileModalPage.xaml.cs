@@ -29,9 +29,9 @@ namespace projDevMain.Modals
                
                 dp.Source = ImageSource.FromFile(user.ProfilePicture);
             }
-            userfullName.Text = $"{user.FirstName} {user.MiddleName} {user.LastName}".Trim();
-            userEmail.Text = user.Email;
-            userContact.Text = user.ContactNumber;
+            userfullName.Text = $"{(string.IsNullOrEmpty(user.FirstName) ? "Edit Profile" : user.FirstName)} {(string.IsNullOrEmpty(user.LastName) ? "" : user.LastName)}".Trim();
+            userEmail.Text = string.IsNullOrEmpty(user.Email) ? "Edit Profile" : user.Email;
+            userContact.Text = string.IsNullOrEmpty(user.ContactNumber) ? "Edit Profile" : user.ContactNumber;
         }
         //LOGGOUT FUNCTION AND DELETE THE CURRENT SESSION
         private async void Logout_Clicked(object sender, EventArgs e)

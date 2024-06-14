@@ -15,6 +15,7 @@ namespace projDevMain
         public loginPage()
         {
             InitializeComponent();
+            
             _databaseService = new DatabaseService();
             NavigationPage.SetHasNavigationBar(this, false);
         }

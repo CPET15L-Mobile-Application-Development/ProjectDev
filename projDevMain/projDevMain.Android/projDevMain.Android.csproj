@@ -148,6 +148,10 @@
     <Content Include="Resources\drawable\about.png" />
     <Content Include="Resources\drawable\home.png" />
     <Content Include="Resources\drawable\list.png" />
+    <AndroidResource Include="Resources\drawable\noImageBox.png" />
+    <AndroidResource Include="Resources\drawable\noImageCard.png" />
+    <AndroidResource Include="Resources\drawable\noImageProf.png" />
+    <AndroidResource Include="Resources\drawable\noImageWall.png" />
     <Content Include="Resources\drawable\profile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "In3yU0aLt9g=",
+  "dgSpecHash": "Ir2ivlFEUiY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
+  "projectFilePath": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain\\projDevMain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wataru\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Wataru\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dy/lQaK1F98=",
+  "dgSpecHash": "j5JUyuxIvjY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Wataru\\source\\repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
+  "projectFilePath": "C:\\Users\\Wataru\\Source\\Repos\\ProjectDev\\projDevMain\\projDevMain.Android\\projDevMain.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Wataru\\.nuget\\packages\\sqlite-net-pcl\\1.9.172\\sqlite-net-pcl.1.9.172.nupkg.sha512",
     "C:\\Users\\Wataru\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.1.8\\sqlitepclraw.bundle_green.2.1.8.nupkg.sha512",

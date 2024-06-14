@@ -18,6 +18,7 @@ namespace projDevMain
             InitializeComponent();
             _databaseService = new DatabaseService();
 
+
             //PASSWORD REQUIREMENTS MODAL
             DisplayAlert("Password Requirements",
                 "Password must be:\n" +
@@ -28,9 +29,15 @@ namespace projDevMain
                 "- Contains at least one special character",
                 "OK");
 
+            name.Focus();
+
+            
+
             //NAVIGATION PAGE PROPERTIES
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+       
         //GOTO LOGIN PAGE
         private void LoginPage_Tapped(object sender, EventArgs e)
         {
