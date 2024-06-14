@@ -7,7 +7,7 @@
 
         <ScrollView VerticalScrollBarVisibility="Always">
             <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
-                <!--MAIN TITLE OF THE MODAL-->
+                <!-- MAIN TITLE OF THE MODAL -->
                 <Label Text="Add New Game to the Library" TextColor="White" FontFamily="Gilroy-Bold" FontSize="Large"/>
                 
                 <!--INSERT NAME PORTION-->
