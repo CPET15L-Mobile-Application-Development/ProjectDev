@@ -2,7 +2,7 @@
 **TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES - MANILA CAMPUS**  
 **COLLEGE OF INDUSTRIAL TECHNOLOGY**
 
-![Charon Logo](https://github.com/CPET15L-Mobile-Application-Development/ProjectDev/blob/joeyboymission-patch-bug-fix/logoHIGH.png)
+![Charon Logo](https://github.com/CPET15L-Mobile-Application-Development/ProjectDev/blob/main/logoHIGH.png)
 
 **PROJECT:** Mobile Application Point of Sale  
 **PROJECT TITLE:** CHARON  
