@@ -78,6 +78,13 @@ namespace projDevMain.Modals
             });
         }
 
+        //BACK MODAL FUNCTION WHEN CLOSE BUTTON CLICKED
+        async void closeBTTN(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
+
+
         private async void image4_Clicked(object sender, EventArgs e)
         {
             await PickImage(result => {

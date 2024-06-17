@@ -43,10 +43,19 @@ namespace projDevMain.Modals
             // Save properties if needed
             await Application.Current.SavePropertiesAsync();
 
-            // Navigate to the login page
-            Application.Current.MainPage = new NavigationPage(new loginPage());
+            var answer = await DisplayAlert("Logout", "Do you want to logout the current session?", "Yes", "No");
+            if (answer)
+            {
+                // Navigate to the login page
+                Application.Current.MainPage = new NavigationPage(new loginPage());
+            }
+            else
+            {
+                //CLOSE THE DISPLAY ALERT
+            }
         }
 
+        //GOTO FACEBOOK USING USER FACEBOOK
         private async void fb_Clicked(object sender, EventArgs e)
         {
             string facebookUrl = currentUser.Facebook;
@@ -119,6 +128,11 @@ namespace projDevMain.Modals
             {
                 await Browser.OpenAsync(url);
             }
+        }
+        //BACK MODAL FUNCTION WHEN CLOSE BUTTON CLICKED
+        async void closeBTTN(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

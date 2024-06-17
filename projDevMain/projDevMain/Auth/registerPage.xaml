@@ -4,14 +4,15 @@
              xmlns:local="clr-namespace:projDevMain.ViewModels"
              x:Class="projDevMain.registerPage"
              Background="#02111b">
+    
     <ContentPage.BindingContext>
         <local:RegisterPageViewModel />
     </ContentPage.BindingContext>
+    
     <ContentPage.Content>
+        <!--REGISTER CONTENT-->
         <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
-            <!--REGISTER PART-->
             <Label Text="Register" TextColor="White" FontAttributes="Bold" FontSize="30" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
-
             <StackLayout Spacing="15" HorizontalOptions="CenterAndExpand">
                 <Entry TextColor="White" Text="{Binding Username}" Placeholder="Username" PlaceholderColor="#adb8bd" WidthRequest="300" BackgroundColor="#212930" HeightRequest="45" FontSize="15"/>
                 <Entry TextColor="White" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"/>
@@ -35,7 +36,6 @@
             </StackLayout>
 
             <Button TextColor="#fcfcfc" BackgroundColor="#5d737e" CornerRadius="5" Text="Sign Up" FontSize="15" Margin="0,20,0,20" Clicked="signUp_Clicked" IsEnabled="{Binding CanSignUp}"/>
-
             <!--LOGIN PART-->
             <Label HorizontalOptions="Center">
                 <Label.FormattedText>

@@ -136,7 +136,7 @@ namespace projDevMain.ViewModels
             var hasUpperChar = Password.Any(char.IsUpper);
             var hasLowerChar = Password.Any(char.IsLower);
             var hasSpecialChar = Password.Any(c => !char.IsLetterOrDigit(c));
-            var isLengthValid = Password.Length >= 8 && Password.Length <= 15;
+            var isLengthValid = Password.Length >= 8;
 
             if (!isLengthValid)
             {

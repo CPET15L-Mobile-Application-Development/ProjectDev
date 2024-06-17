@@ -45,6 +45,11 @@ D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\n
 D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.dll
 D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\refint\projDevMain.dll
 D:\Documents\PROGRAMMING FILES\Visual Studio\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.pdb
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\AccountInfoModalPage.xaml.g.cs
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\GameDescripModalPage.xaml.g.cs
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\GameModalPage.xaml.g.cs
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\ImageInfoModalPage.xaml.g.cs
+C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\ProfileModalPage.xaml.g.cs
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.deps.json
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\projDevMain.dll
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\bin\Debug\netstandard2.0\ref\projDevMain.dll
@@ -64,7 +69,6 @@ D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\homePage.xaml.g.cs
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\listPage.xaml.g.cs
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
-D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\ProfileModalPage.xaml.g.cs
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Views\SplashPage.xaml.g.cs
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfoInputs.cache
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.AssemblyInfo.cs
@@ -74,8 +78,3 @@ D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.dll
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\refint\projDevMain.dll
 D:\Documents\PROGRAMMING FILES\Visual Studio\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\projDevMain.pdb
-C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\AccountInfoModalPage.xaml.g.cs
-C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\GameDescripModalPage.xaml.g.cs
-C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\GameModalPage.xaml.g.cs
-C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\ImageInfoModalPage.xaml.g.cs
-C:\Users\Wataru\Source\Repos\ProjectDev\projDevMain\projDevMain\obj\Debug\netstandard2.0\Modals\ProfileModalPage.xaml.g.cs

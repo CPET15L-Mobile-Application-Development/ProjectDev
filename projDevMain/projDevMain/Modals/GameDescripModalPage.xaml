@@ -2,13 +2,48 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="projDevMain.Modals.GameDescripModalPage"
-             BackgroundColor="#02111b">
-    <StackLayout Padding="20">
-        <Label Text="{Binding Name}" FontSize="Large" FontFamily="Gilroy-Bold" TextColor="White" />
-        <Image Source="{Binding Image}" HeightRequest="250" WidthRequest="162" Aspect="AspectFill" />
-        <Label Text="{Binding Price}" FontSize="Medium" FontFamily="Gilroy-Bold" TextColor="White" />
-        <Label Text="{Binding Rating}" FontSize="Medium" FontFamily="Gilroy-Regular" TextColor="White" />
-        <Label Text="{Binding Tags}" FontSize="Medium" FontFamily="Gilroy-Regular" TextColor="White" />
-        <Label Text="{Binding Description}" FontSize="Medium" FontFamily="Gilroy-Regular" TextColor="White" />
-    </StackLayout>
+             BackgroundColor="Transparent">
+
+    <ContentPage.Content>
+        <!--GAME DESCRIPTION MODAL PAGE CONTENTS-->
+        <StackLayout Padding="25" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <!--MODAL FOR THE GAME DESCRIPTIONS-->
+            <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True" BorderColor="White">
+                <ScrollView VerticalScrollBarVisibility="Default">
+                    <StackLayout Padding="5">
+                        <!--CLOSE MODAL BUTTON-->
+                        <ImageButton Clicked="closeBTTN" BackgroundColor="Transparent" Source="closeIcon.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="EndAndExpand" Padding="0" Margin="0"/>
+
+                        <!--GAME DESCRIPTIONS CONTENTS-->
+                        <Label Text="{Binding Name}" FontSize="Large" FontFamily="Gilroy-Bold" TextColor="White" />
+                        <Label Text="{Binding Tags}" FontSize="Small" FontAttributes="Italic" FontFamily="Gilroy-Regular" TextColor="White"/>
+                        <Image Source="{Binding Image}" Margin="0,10,0,10" HeightRequest="250" WidthRequest="162" Aspect="AspectFit" />
+
+                        <StackLayout Orientation="Horizontal">
+                            <!--PRICE FORMAT CONDITIONS-->
+                            <Label FontSize="Medium" FontFamily="Gilroy-Bold" TextColor="White">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="Text" Value="{Binding Price,StringFormat='₱ {0}'}"/>
+                                        <Style.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Price}" Value="0">
+                                                <Setter Property="Text" Value="FREE"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                            <!--RATING FORMAT-->
+                            <Label Text="{Binding Rating, StringFormat='Rating: {0}'}" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" VerticalOptions="CenterAndExpand" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                        <Label Text="{Binding Description}" FontSize="Small" FontFamily="Gilroy-Regular" TextColor="White" />
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+
+        </StackLayout>
+        
+
+    </ContentPage.Content>
+    
 </ContentPage>

@@ -61,11 +61,11 @@ namespace projDevMain
 
         
         //SWIPEITEM EDIT GAME FUNCTION
-        private async void editItem_Invoked(object sender, EventArgs e)
+        async void editItem_Invoked(object sender, EventArgs e)
         {
             var item = sender as SwipeItem;
             var game = item.CommandParameter as GameListModel;
-            await Navigation.PushAsync(new GameModalPage(game));
+            await Navigation.PushModalAsync(new GameModalPage(game));
         }
         //SWIPE ITEM DELETE GAME FUNCTION
         private async void delItem_Invoked(object sender, EventArgs e)
@@ -80,9 +80,9 @@ namespace projDevMain
             }
         }
         //ADD BUTTON NAVIGATE TO GAME MODAL PAGE
-        private async void clickAdd(object sender, EventArgs e)
+        async void clickAdd(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GameModalPage());
+            await Navigation.PushModalAsync(new GameModalPage());
         }
 
 

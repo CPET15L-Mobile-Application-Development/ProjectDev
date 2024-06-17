@@ -4,13 +4,14 @@
              xmlns:local="clr-namespace:projDevMain"
              x:Class="projDevMain.MainPage"
                 
-             NavigationPage.TitleIconImageSource="topBrand.png"
+             NavigationPage.HasNavigationBar="False"
              BarBackgroundColor="#02111b"
              BackgroundColor="#02111b"
              SelectedTabColor="#5d737e"
              UnselectedTabColor="#fcfcfc"
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-             android:TabbedPage.ToolbarPlacement="Bottom">
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             android:TabbedPage.IsSwipePagingEnabled="False">
     
     <!--INCLUDE ALL PAGES AS TABBED-->
 

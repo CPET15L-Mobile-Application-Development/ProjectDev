@@ -4,6 +4,7 @@
              x:Class="projDevMain.aboutPage"
              BackgroundColor="#212930">
     <ContentPage.Content>
+        <!--ABOUT PAGE CONTENTS-->
         <ScrollView HorizontalScrollBarVisibility="Always">
             <StackLayout Margin="20,0,20,15">
                 <Label Text="About Page" FontFamily="Gilroy-Bold" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center" Margin="0,25,0,0"/>
@@ -62,7 +63,7 @@
                          FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
                         <Label Text="You agree to use the App in a lawful and respectful manner. You will not use the App to:"
                          FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
-                        
+
                         <Label Text="- Upload or share any content that is illegal, harmful, threatening, abusive, harassing, defamatory, obscene, hateful, or racially or ethnically offensive."
                          FontFamily="Gilroy-Regular" FontSize="Small" TextColor="White"/>
                         <Label Text="- Infringe on the intellectual property rights of others."
@@ -120,17 +121,33 @@ Any dispute arising out of or relating to these Terms will be settled by Regiona
 
                     </StackLayout>
                 </Frame>
-                
+
+
                 <!--LOGOS INVOLVED-->
                 <StackLayout Orientation="Horizontal" Spacing="15" Margin="0,15,0,0"  HeightRequest="70" HorizontalOptions="CenterAndExpand">
                     <Image Source="logoMain.png" />
                     <Image Source="tupLOGO.png"/>
                     <Image Source="citLOGO.png"/>
                 </StackLayout>
-                
-                
+
+                <Label Text="Version: 1.0.0 (Stable Release)" TextColor="White" FontSize="Small" FontFamily="Gilroy-Regular" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0"/>
+
+                <Label HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="You can find the documentation and release of the application in the " TextColor="White" FontSize="Small" FontFamily="Gilroy-Regular"/>
+                            <Span Text="Github Repository" TextColor="White" FontSize="Small" FontFamily="Gilroy-Bold" FontAttributes="Bold" TextDecorations="Underline"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="githubRepo"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+                <Label Text="Credits to the Developer:" TextColor="White" FontSize="Small" FontFamily="Gilroy-Bold" HorizontalOptions="CenterAndExpand" Margin="0,10,0,0"/>
+                <Label Text="Mission, Joey Boy E. " TextColor="White" FontSize="Small" FontFamily="Gilroy-Regular" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Pancho, Michael Angilo S." TextColor="White" FontSize="Small" FontFamily="Gilroy-Regular" HorizontalOptions="CenterAndExpand" Margin="0,0,0,25"/>
             </StackLayout>
         </ScrollView>
-        
     </ContentPage.Content>
 </ContentPage>

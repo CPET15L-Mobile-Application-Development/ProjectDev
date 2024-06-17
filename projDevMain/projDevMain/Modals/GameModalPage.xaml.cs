@@ -17,6 +17,7 @@ namespace projDevMain
         private bool _isEdit;
         private DatabaseService _databaseService;
 
+        //INITIALIZE THE GAMEMODALPAGE AND DATABASE
         public GameModalPage()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace projDevMain
 
         Models.GameListModel _game;
 
+        //INITIALIZE AND DEFINE THE VARIABLES
         public GameModalPage(Models.GameListModel game)
         {
             InitializeComponent();
@@ -40,6 +42,7 @@ namespace projDevMain
             nameEntry.Focus();
         }
 
+        //CONCATENATION OF TAGS
         private void SetTags(string tags)
         {
             var tagList = tags.Split(new[] { "+", "," }, StringSplitOptions.RemoveEmptyEntries).Select(tag => tag.Trim()).ToList();
@@ -52,6 +55,7 @@ namespace projDevMain
             tagPuzzle.IsChecked = tagList.Contains("Puzzle");
         }
 
+        //FIELD VALIDATION FUNCTION
         async void OnSaveClicked(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(nameEntry.Text) ||
@@ -71,6 +75,7 @@ namespace projDevMain
             }
         }
 
+        //VALIDATION TAGS
         private string GetSelectedTags()
         {
             var selectedTags = new[]
@@ -87,6 +92,7 @@ namespace projDevMain
             return string.Join("+", selectedTags);
         }
 
+        //ADD GAME FUNCTION
         async void addGame()
         {
             await App.Service.addGame(new Models.GameListModel()
@@ -98,9 +104,10 @@ namespace projDevMain
                 Tags = GetSelectedTags(),
                 Description = descripEntry.Text,
             });
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
 
+        //UPDATE GAME FUNCTIONS
         async void updateGame()
         {
             _game.Name = nameEntry.Text;
@@ -111,9 +118,10 @@ namespace projDevMain
             _game.Description = descripEntry.Text;
 
             await App.Service.updateGame(_game);
-            await Navigation.PopAsync();
+            await Navigation.PopModalAsync();
         }
 
+        //IMPORT IMAGE FUNCTIONS
         async void OnImportImageClicked(object sender, EventArgs e)
         {
             try
@@ -137,6 +145,7 @@ namespace projDevMain
             }
         }
 
+        //SAVE THE IMAGE TO LOCAL STORAGE OPTIONS
         private async Task<string> SaveImageToLocalStorage(string imageUrl)
         {
             if (Uri.IsWellFormedUriString(imageUrl, UriKind.Absolute))
@@ -150,6 +159,7 @@ namespace projDevMain
             return imageUrl;
         }
 
+        //SAVE THE IMAGE FILE PATH
         private async Task<string> SaveFileToLocalStorage(string fileName, Stream fileStream)
         {
             var filePath = Path.Combine(FileSystem.AppDataDirectory, fileName);
@@ -158,6 +168,13 @@ namespace projDevMain
                 await fileStream.CopyToAsync(file);
             }
             return filePath;
+        }
+
+
+        //BACK MODAL FUNCTION WHEN CLOSE BUTTON CLICKED
+        async void closeBTTN(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }

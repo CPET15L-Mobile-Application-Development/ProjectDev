@@ -14,14 +14,17 @@ namespace projDevMain
         {
             InitializeComponent();
             currentUser = user;
-
             var homePage = new homePage(currentUser);
             var listPage = new listPage();
             var accountPage = new accountPage(currentUser);
             var aboutPage = new aboutPage();
 
+
             homePage.SetUsername(currentUser.Username);
 
+            Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.SetIsSwipePagingEnabled(this, false);
+
+            //ALL PAGES MERGE HERE
             Children.Add(new homePage(currentUser)
             {
                 Title = "Home",
@@ -43,8 +46,5 @@ namespace projDevMain
                 IconImageSource = "aboutIcon.png"
             });
         }
-
-
-
     }
 }

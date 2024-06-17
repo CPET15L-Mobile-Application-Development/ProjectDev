@@ -6,14 +6,13 @@
              BackgroundColor="#212930">
 
     <ContentPage.Content>
-
+        <!--ACCOUNT PAGE CONTENTS-->
         <ScrollView >
             <StackLayout>
                 <!--WALLPAPER AND PROFILE PICTURES-->
                 <AbsoluteLayout>
-                    <Image x:Name="wall" Aspect="AspectFill" Source="noImageWall.png" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize"/>
-                    <BoxView CornerRadius="100" BackgroundColor="#212930" WidthRequest="110" HeightRequest="110" AbsoluteLayout.LayoutBounds="230, 45, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="None"/>
-                    <CI:CircleImage x:Name="dp" Source="noImageProf.png" Aspect="AspectFit" WidthRequest="110" HeightRequest="110" AbsoluteLayout.LayoutBounds="230, 45, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="None"/>
+                    <Image x:Name="wall" Aspect="AspectFill" Source="noImageWall.png" HeightRequest="110" WidthRequest="400" AbsoluteLayout.LayoutBounds="0, 0, AutoSize, AutoSize"/>
+                    <CI:CircleImage x:Name="dp" Source="noImageProf.png" Aspect="AspectFill" BorderColor="#adb8bd" BorderThickness="2" WidthRequest="110" HeightRequest="110" AbsoluteLayout.LayoutBounds="230, 45, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="None"/>
 
                     <!--SUB STACKLAYOUT-->
                     <ScrollView AbsoluteLayout.LayoutBounds="15, 110, AutoSize, AutoSize" AbsoluteLayout.LayoutFlags="None" VerticalScrollBarVisibility="Always">
@@ -86,10 +85,10 @@
 
                             <!--IMAGES-->
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="Images" FontFamily="Gilroy-Bold" FontSize="Medium" TextColor="White" Margin="0,10,0,3"/>
+                                <Label Text="Images" FontFamily="Gilroy-Bold" FontSize="Medium" TextColor="White" Margin="0,10,0,5"/>
                                 <ImageButton Clicked="editImages" Source="editIcon.png" BackgroundColor="Transparent" HeightRequest="20" WidthRequest="20" HorizontalOptions="EndAndExpand"/>
                             </StackLayout>
-                            <Frame BackgroundColor="#30292f" CornerRadius="10" Padding="0" Margin="0" HasShadow="True">
+                            <Frame BackgroundColor="#30292f" CornerRadius="10" Padding="0" Margin="0,0,0,30" HasShadow="True">
                                 <ScrollView>
                                     <Grid>
                                         <Grid.RowDefinitions>
@@ -102,12 +101,12 @@
                                             <ColumnDefinition Width="*"/>
                                         </Grid.ColumnDefinitions>
 
-                                        <Image x:Name="image1"  HeightRequest="150" Grid.Row="0" Grid.Column="0"/>
-                                        <Image x:Name="image2"  HeightRequest="150" Grid.Row="0" Grid.Column="1"/>
-                                        <Image x:Name="image3"  HeightRequest="150" Grid.Row="0" Grid.Column="2"/>
-                                        <Image x:Name="image4"  HeightRequest="150" Grid.Row="1" Grid.Column="0"/>
-                                        <Image x:Name="image5"  HeightRequest="150" Grid.Row="1" Grid.Column="1"/>
-                                        <Image x:Name="image6"  HeightRequest="150" Grid.Row="1" Grid.Column="2"/>
+                                        <Image x:Name="image1" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2" Grid.Row="0" Grid.Column="0"/>
+                                        <Image x:Name="image2" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2" Grid.Row="0" Grid.Column="1"/>
+                                        <Image x:Name="image3" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2" Grid.Row="0" Grid.Column="2"/>
+                                        <Image x:Name="image4" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2" Grid.Row="1" Grid.Column="0"/>
+                                        <Image x:Name="image5" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2" Grid.Row="1" Grid.Column="1"/>
+                                        <Image x:Name="image6" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2" Grid.Row="1" Grid.Column="2"/>
                                     </Grid>
                                 </ScrollView>
                             </Frame>

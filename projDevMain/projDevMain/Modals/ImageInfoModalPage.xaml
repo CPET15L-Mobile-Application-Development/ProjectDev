@@ -5,42 +5,35 @@
              BackgroundColor="Transparent">
 
     <ContentPage.Content>
-        <StackLayout Padding="25" HorizontalOptions="Center" VerticalOptions="Center">
-            <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True">
-                <StackLayout Padding="10">
-                    <Label Text="Modify Featured Images" TextColor="White" FontSize="Title" FontFamily="Gilroy-Bold"/>
-                    <Label Text="Tip: Tap the specific image slot you like to change or upload" TextColor="#adb8bd" FontSize="Micro" FontAttributes="Italic"/>
+        <!--IMAGE INFORMATION MODAL PAGE CONENTS-->
+        <StackLayout Padding="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <!--FRAME FOR MODIFY FEATURED IMAGES-->
+            <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True" BorderColor="White">
+                <StackLayout>
+                    <!--CLOSE MODAL BUTTON-->
+                    <ImageButton Clicked="closeBTTN" BackgroundColor="Transparent" Source="closeIcon.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="End" Margin="0" Padding="0"/>
+                    
+                    <!--CONTENT PART-->
+                    <StackLayout Padding="5">
+                        <Label Text="Modify Featured Images" TextColor="White" FontSize="Large" FontFamily="Gilroy-Bold"/>
+                        <Label Text="Tip: Tap the specific image slot you like to change or upload" TextColor="#adb8bd" FontSize="Micro" FontAttributes="Italic"/>
 
-                    <!--<CollectionView x:Name="accImgDataView">
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" HorizontalItemSpacing="5" VerticalItemSpacing="5" Span="2"/>
-                </CollectionView.ItemsLayout>
-                
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <ImageButton BackgroundColor="White" Source="" Margin="0,10,0,0" HeightRequest="150"/>
-                            <Label Text="{Binding }" FontSize="Small" TextColor="White" FontFamily="Gilroy-Regular" HorizontalOptions="Center" VerticalOptions="Center"/>
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>-->
+                        <!--CHANGE FROM COLLECTION VIEW TO GRID VIEW-->
+                        <Grid Padding="10">
+                            <ImageButton x:Name="image1" Clicked="image1_Clicked" Grid.Column="0" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2"/>
+                            <ImageButton x:Name="image2" Clicked="image2_Clicked" Grid.Column="1" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2"/>
+                            <ImageButton x:Name="image3" Clicked="image3_Clicked" Grid.Column="0" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2"/>
+                            <ImageButton x:Name="image4" Clicked="image4_Clicked" Grid.Column="1" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2"/>
+                            <ImageButton x:Name="image5" Clicked="image5_Clicked" Grid.Column="0" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2"/>
+                            <ImageButton x:Name="image6" Clicked="image6_Clicked" Grid.Column="1" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFill" HeightRequest="150" WidthRequest="97.2"/>
+                        </Grid>
 
-                    <!--CHANGE FROM COLLECTION VIEW TO GRID VIEW-->
-                    <Grid Padding="10">
-                        <ImageButton x:Name="image1" Clicked="image1_Clicked" Grid.Column="0" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton x:Name="image2" Clicked="image2_Clicked" Grid.Column="1" Grid.Row="0" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton x:Name="image3" Clicked="image3_Clicked" Grid.Column="0" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton x:Name="image4" Clicked="image4_Clicked" Grid.Column="1" Grid.Row="1" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton x:Name="image5" Clicked="image5_Clicked" Grid.Column="0" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                        <ImageButton x:Name="image6" Clicked="image6_Clicked" Grid.Column="1" Grid.Row="2" Source="noImageBox.png" BackgroundColor="Transparent" Aspect="AspectFit" HeightRequest="150"/>
-                    </Grid>
+                    </StackLayout>
 
+                    <!--SAVE BUTTON-->
                     <Button Text="Save" Clicked="OnSaveClicked" CornerRadius="10" FontFamily="Gilroy-Bold" FontSize="Medium" BackgroundColor="#5d737e" TextColor="#fcfcfc" Margin="15"/>
                 </StackLayout>
-
             </Frame>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

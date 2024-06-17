@@ -5,13 +5,17 @@
              xmlns:CI="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              BackgroundColor="Transparent" >
     <ContentPage.Content >
-        <StackLayout Padding="25" HorizontalOptions="Center" VerticalOptions="Center" >
+        <!--PROFILE MODAL PAGE CONENTS-->
+        <StackLayout Padding="25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
             <!--FRAME FOR THE PROFILE-->
-            <Frame BackgroundColor="#212930" CornerRadius="10" HasShadow="True" BorderColor="White">
+            <Frame BackgroundColor="#212930" Margin="15" CornerRadius="10" HasShadow="True" BorderColor="White">
                 <StackLayout>
+                    <!--CLOSE MODAL BUTTON-->
+                    <ImageButton Clicked="closeBTTN" BackgroundColor="Transparent" Source="closeIcon.png" WidthRequest="30" HeightRequest="30" HorizontalOptions="End" Margin="0" Padding="0"/>
+                    
                     <Label Text="Profile Summary" TextColor="White" FontFamily="Gilroy-Bold" FontSize="Title" HorizontalOptions="Center"/>
                     <Frame BackgroundColor="Transparent" BorderColor="#adb8bd" CornerRadius="500" Padding="2" Margin="5" HorizontalOptions="Center" HeightRequest="150" WidthRequest="150">
-                        <CI:CircleImage x:Name="dp" Source="noImageProf.png" HeightRequest="150" WidthRequest="150"/>
+                        <CI:CircleImage x:Name="dp" Source="noImageProf.png" HeightRequest="150" WidthRequest="150" Aspect="AspectFill"/>
                     </Frame>
                     <Label x:Name="userfullName" TextColor="White" FontFamily="Gilroy-Bold" FontSize="Medium" HorizontalOptions="Center"/>
                     <Label Text="Fullname" TextColor="#adb8bd" FontFamily="Gilroy-Light" FontSize="Small" HorizontalOptions="Center"/>

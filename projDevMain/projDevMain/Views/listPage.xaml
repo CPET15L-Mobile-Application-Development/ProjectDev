@@ -5,6 +5,7 @@
              BackgroundColor="#212930">
 
     <ContentPage.Content>
+        <!--LIST PAGE CONTENTS-->
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
@@ -46,7 +47,7 @@
                                 </SwipeView.RightItems>
 
                                 <!--FORMAT FOR THE LAYOUT OF EACH LIST-->
-                                <StackLayout Orientation="Horizontal" Margin="15,5,15,5">
+                                <StackLayout Orientation="Horizontal" Margin="15,5,15,5" BackgroundColor="#364449">
                                     <Image Source="{Binding Image}" HeightRequest="100"/>
                                     <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="10">
                                         <Label TextColor="White" Text="{Binding Name}" FontFamily="Gilroy-Bold" FontSize="Medium"/>

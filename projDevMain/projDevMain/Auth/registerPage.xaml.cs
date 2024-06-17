@@ -29,7 +29,7 @@ namespace projDevMain
                 "- Contains at least one special character",
                 "OK");
 
-            name.Focus();
+            //name.Focus();
 
             
 

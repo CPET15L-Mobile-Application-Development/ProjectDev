@@ -13,5 +13,11 @@ namespace projDevMain.Modals
             InitializeComponent();
             BindingContext = game;
         }
+
+        //BACK MODAL FUNCTION WHEN CLOSE BUTTON CLICKED
+        async void closeBTTN(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

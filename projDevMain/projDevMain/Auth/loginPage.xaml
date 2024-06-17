@@ -8,9 +8,9 @@
     <ContentPage.BindingContext>
         <local:LoginPageViewModel/>
     </ContentPage.BindingContext>
-    
-    <ContentPage.Content>
 
+    <ContentPage.Content>
+        <!--LOGIN CONTENT-->
         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
             <!--LOGIN PART-->
             <Label Text="Login" TextColor="White" FontAttributes="Bold" FontSize="30" FontFamily="Gilroy-Bold" HorizontalTextAlignment="Center" Margin="0,0,0,20"/>
@@ -19,7 +19,7 @@
                 <Entry x:Name="passwordEntry" TextColor="White" Text="{Binding Password}" Placeholder="Password" PlaceholderColor="#adb8bd" FontFamily="Gilroy-Regular" IsPassword="True" BackgroundColor="#212930" HeightRequest="45" FontSize="15"></Entry>
             </StackLayout>
             <Button TextColor="#fcfcfc" BackgroundColor="#5d737e" Text="Sign In" FontSize="15" FontFamily="Gilroy-Regular" CornerRadius="5" Margin="0,20,0,20" WidthRequest="150" Clicked="signIn_Clicked"/>
-            
+
             <!--REGISTER PART-->
             <Label HorizontalOptions="Center" FontFamily="Gilroy-Regular">
                 <Label.FormattedText>
@@ -33,6 +33,5 @@
                 </Label.GestureRecognizers>
             </Label>
         </StackLayout>
-        
     </ContentPage.Content>
 </ContentPage>

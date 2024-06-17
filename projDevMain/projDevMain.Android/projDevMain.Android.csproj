@@ -126,11 +126,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\charonlogo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\JBimage1.png" />
     <AndroidResource Include="Resources\drawable\JBimage2.png" />
     <AndroidResource Include="Resources\drawable\JBimage3.png" />
@@ -146,6 +141,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\drawable\about.png" />
+    <AndroidResource Include="Resources\drawable\charonIcon.png" />
+    <AndroidResource Include="Resources\drawable\backArrowIcon.png" />
+    <AndroidResource Include="Resources\drawable\closeIcon.png" />
     <Content Include="Resources\drawable\home.png" />
     <Content Include="Resources\drawable\list.png" />
     <AndroidResource Include="Resources\drawable\noImageBox.png" />

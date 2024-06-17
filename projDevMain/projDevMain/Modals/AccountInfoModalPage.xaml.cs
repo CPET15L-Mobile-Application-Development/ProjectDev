@@ -150,5 +150,11 @@ namespace projDevMain.Modals
             }
             return filePath;
         }
+
+        //BACK MODAL FUNCTION WHEN CLOSE BUTTON CLICKED
+        async void closeBTTN(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
